@@ -1,0 +1,20 @@
+[
+    {
+        "role":"Boss man",
+        "company":"Current Company LTD",
+        "summary":"Led in development of fast paced software teams.\n- list\n- of\n- things",
+        "range":"February 2016 - Present"
+    },
+    {
+        "role":"Developer",
+        "company":"Current Company LTD",
+        "summary":"Expedited the synergies of collaborative agile tooling.",
+        "range":"March 2014 - February 2016"
+    },
+    {
+        "role":"Developer",
+        "company":"Previous Company Inc.",
+        "summary":"Implemented continuous devops pipelines automationing",
+        "range":"February 2013 - March 2014"
+    }
+]
