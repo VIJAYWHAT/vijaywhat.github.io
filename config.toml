@@ -1,4 +1,4 @@
-title = "Sathish Kumar Thiyagarajan"
+title = "Vijay Raja"
 baseURL = "https://example.com/"
 theme = "my-resume"
 languageCode = "en-us"
@@ -10,10 +10,10 @@ enableGitInfo = false
 [params]
 address = "Coimbatore, India"
 favicon = "/favicon.ico"
-firstName = "Sathish Kumar"
-lastName = "Thiyagarajan"
+firstName = "Vijay"
+lastName = "Raja"
 phone = "1-555-555-1234"
-profileImage = "https://avatars.githubusercontent.com/u/1736813?v=4"
+profileImage = "https://avatars.githubusercontent.com/u/89501520?v=4"
 showQr = true
 showContact = true
 sections = ["skills","publications","creations","contributions","experience","education","blog"]
