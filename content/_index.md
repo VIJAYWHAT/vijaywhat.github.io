@@ -9,4 +9,6 @@ outputs:
 - rss
 - json
 ---
-Proven Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.
+
+Self Learning Software Engineer, passionate about technology and programming languages with a focus on C, Java and python specialized in R&D and POC. 
+

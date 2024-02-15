@@ -1,32 +1,55 @@
 [
   {
-      "grouping":"Architecture",
-      "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS"]
-  },{
-      "grouping":"Languages, Operating Systems & Tools",
-      "skills":[ "Java","Python","git","subversion","linux","bash","php","jquery","javascript"]
-  },
+    "grouping":"Cyber Security Researching",
+    "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS"]
+},
   {
-      "grouping":"Platform Development & Administration",
-      "skills":[ "Atlassian","Bamboo","Bitbucket","NGINX","MySQL","Wordpress"]
+      "grouping":"GitOps",
+      "skills":["Git"]
   },
   {
       "grouping":"Data Management",
       "skills":[
         {"name":"Microsoft SQL Server","icon":"msql_server"},
-        {"name":"Oracle","icon":"database"},
-        "MongoDB",
-        {"name":"Apache Spark"}
+        {"name":"My SQL","icon":"database"},
+        {"name": "PostgreSQL"}
       ]
   },
   {
-    "grouping":"Containers & Cloud",
-      "skills":[
-          {"name":"BOSH","link":"https://bosh.io"},
-          {"name":"Docker","link":"https://docker.com"},
-          {"name":"AWS","link":"https://aws.amazon.com"},
-          {"name":"Google Cloud","link":"https://cloud.google.com"},
-          {"name":"Linux","link":"https://bosh.io"}
-      ]
-  }
+    "grouping":"Languages, Operating Systems & Tools",
+    "skills":[  
+        {"name":"C"},
+        {"name":"C++"},
+        {"name":".Net and c#"},
+        {"name":"Java"},
+        {"name":"Python"},
+        {"name":"php"},
+        {"name":"Flutter"},
+        {"name":"git"},
+        {"name":"linux"},
+        {"name":"bash"},
+        {"name":"Joget"},
+        {"name":"Markdown"},
+        {"name":"Katex"}]
+},
+{
+  "grouping":"UI/UX",
+  "skills":[
+    {"name":"HTML 5"},
+    {"name":"CSS 3"},
+    {"name":"Bootstrap"}
+    {"name":"Dart"},
+    {"name":"Figma"},
+    {"name":"Illustrator"}
+  ]
+},
+{
+  "grouping":"Methodology",
+  "skills":[
+    {"name":"Agile"},
+    {"name":"Waterfall"},
+    {"name":"Kanban"}
+  ]
+}
+
 ]
