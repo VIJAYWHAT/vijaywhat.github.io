@@ -123,6 +123,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'showPublications', name: 'showPublications', widget: 'boolean', required: false }
               - { label: 'showExperience', name: 'showExperience', widget: 'boolean', required: false }
               - { label: 'showEducation', name: 'showEducation', widget: 'boolean', required: false }
+              - { label: 'showContact', name: 'showContact', widget: 'boolean', required: false }
               - { label: 'showQr', name: 'showQr', widget: 'boolean', required: false }
               - { label: 'favicon', name: 'favicon', widget: 'image' }
               - label: 'Google'
