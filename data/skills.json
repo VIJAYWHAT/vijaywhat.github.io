@@ -8,7 +8,7 @@
       "skills":["Git"]
   },
   {
-      "grouping":"Data Management",
+      "grouping":"DataBase Management",
       "skills":[
         {"name":"Microsoft SQL Server","icon":"msql_server"},
         {"name":"My SQL","icon":"database"},
