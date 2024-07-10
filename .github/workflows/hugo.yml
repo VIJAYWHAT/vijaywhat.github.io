@@ -54,6 +54,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
+          git submodule add -f https://github.com/techatpark/my-resume.git themes/my-resume
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"

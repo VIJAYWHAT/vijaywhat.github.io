@@ -14,7 +14,7 @@ firstName = "Vijay"
 lastName = "Raja"
 phone = "7339480350"
 profileImage = "https://avatars.githubusercontent.com/u/89501520?v=4"
-showQr = true
+showSocializations = true
 showContact = false
 sections = ["skills","publications","blog","creations","contributions","experience","education"]
 
