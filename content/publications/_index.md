@@ -2,7 +2,7 @@
 title: Publications
 date: 2020-01-07T16:47:30.077Z
 link: NA
-image: /img/organicdevops.webp
+image: /img/three-states-of-data.png
 description: NA
 weight: 10
 sitemap:
@@ -15,4 +15,4 @@ This page represents the landing page for "publications" section. It is also sho
 
 \-->
 
-A collection of articles, presentations or talks, most likely on Culture and DevOps, because let's admit it, they are one in the same ;)
+A collection of articles, presentations or talks, most likely on CyberSecurity and DevOps, because let's admit it, they are one in the same ;)

@@ -4,10 +4,6 @@
     "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS"]
 },
   {
-      "grouping":"GitOps",
-      "skills":["Git"]
-  },
-  {
       "grouping":"DataBase Management",
       "skills":[
         {"name":"Microsoft SQL Server","icon":"msql_server"},
@@ -50,6 +46,10 @@
     {"name":"Waterfall"},
     {"name":"Kanban"}
   ]
+},
+{
+  "grouping":"GitOps",
+  "skills":["Git"]
 }
 
 ]
