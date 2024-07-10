@@ -1,13 +1,13 @@
 ---
 title: Blogs
-date: 2020-01-07T15:00:28.528Z
-link: Not applicable
-image: /img/marketplace-summary.webp
-description: Not applicable
+date: 2020-01-07T16:47:30.077Z
+link: NA
+image: /img/three-states-of-data.png
+description: NA
 weight: 10
 sitemap:
-  priority: 0.5
-  weight: 0.8
+  priority: 0.6
+  weight: 0.5
 ---
 <!--
 
@@ -15,6 +15,4 @@ This page represents the landing page for "Blogs" section. It is also shown unde
 
 \-->
 
-
-
-<p>A collection of Blogs authored by Vijay Raja.</p>
+Explore my blog where Cybersecurity meets, DevOps, featuring articles, presentations, and talks that reveal their seamless integration and provide insights for professionals at all levels.

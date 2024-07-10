@@ -16,7 +16,7 @@ phone = "1-555-555-1234"
 profileImage = "https://avatars.githubusercontent.com/u/89501520?v=4"
 showQr = true
 showContact = true
-sections = ["skills","publications","creations","contributions","experience","education","blog"]
+sections = ["skills","publications","creations","blog","contributions","experience","education"]
 
 
 [params.google]
