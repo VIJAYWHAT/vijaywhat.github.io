@@ -3,7 +3,7 @@ title: "Basics of Cybersecurity - Data At Rest"
 date: 2024-02-28
 pubtype: "Presentations"
 featured: true
-description: "This blog post delves into the basics of cybersecurity, highlighting the importance of protecting data at rest, in transit, and in use. It discusses techniques such as pseudonymization and anonymization to secure sensitive information and prevent data breaches."
+description: "This Presentation delves into the basics of cybersecurity, highlighting the importance of protecting data at rest, in transit, and in use. It discusses techniques such as pseudonymization and anonymization to secure sensitive information and prevent data breaches."
 tags: ["Cybersecurity","Data Security","Data at Rest","Pseudonymization","agile","Secret Key"]
 image: "/img/three-states-of-data.png"
 link: "https://techatpark.com/posts/security-data-at-rest/"
