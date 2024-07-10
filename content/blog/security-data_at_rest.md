@@ -1,10 +1,10 @@
 ---
 title: "Basics of Cybersecurity - Data At Rest"
 date: 2024-02-28
-pubtype: "Presentations"
+pubtype: "Blog"
 featured: true
-description: "This Presentation delves into the basics of cybersecurity, highlighting the importance of protecting data at rest, in transit, and in use. It discusses techniques such as pseudonymization and anonymization to secure sensitive information and prevent data breaches."
-tags: ["Cybersecurity","Data Security","Data at Rest","Pseudonymization","agile","Secret Key"]
+description: "Discover SJSON, an innovative JSON parser crafted for API development, originating from the Bangalore Java User Group. This blog explores its creation, focusing on simple validation and customizable key rules for API servers. Join us on GitHub to contribute to advancing JSON parsing in API development."
+tags: ["SJSON","JSON Parser","API Development","Java Development","JSON","Software Engineering"]
 image: "/img/three-states-of-data.png"
 link: "https://techatpark.com/posts/security-data-at-rest/"
 fact: "Interesting little tidbit shown below image on summary and detail page"
