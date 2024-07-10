@@ -9,13 +9,13 @@ enableGitInfo = false
 
 [params]
 address = "Coimbatore, India"
-favicon = "./static/favicon.png"
+favicon = "/favicon.png"
 firstName = "Vijay"
 lastName = "Raja"
-phone = "1-555-555-1234"
+phone = "7339480350"
 profileImage = "https://avatars.githubusercontent.com/u/89501520?v=4"
 showQr = true
-showContact = true
+showContact = false
 sections = ["skills","publications","blog","creations","contributions","experience","education"]
 
 
@@ -25,24 +25,12 @@ sections = ["skills","publications","blog","creations","contributions","experien
 trackerID = "XX-123446-01"
 
 [[params.handles]]
-link = "https://www.linkedin.com/in/edwardwebb/"
+link = "https://www.linkedin.com/in/vijay-raja42/"
 name = "LinkedIn"
 
 [[params.handles]]
-link = "https://github.com/eddiewebb/"
+link = "https://github.com/vijaywhat/"
 name = "GitHub"
-
-[[params.handles]]
-link = "https://bitbucket.org/eddiewebb/"
-name = "Bitbucket"
-
-[[params.handles]]
-link = "https://stackoverflow.com/users/story/82880"
-name = "Stack Overflow"
-
-[[params.handles]]
-link = "https://keybase.io/edwardawebb"
-name = "Keybase"
 
 [outputs]
 home = ["HTML", "JSON"]

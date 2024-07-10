@@ -7,7 +7,7 @@ description: "Discover SJSON, an innovative JSON parser crafted for API developm
 tags: ["SJSON","JSON Parser","API Development","Java Development","JSON","Software Engineering"]
 link: "https://techatpark.com/posts/sjson/"
 fact: "Interesting little tidbit shown below image on summary and detail page"
-weight: 400
+weight: 300
 sitemap:
   priority : 0.8
 ---
