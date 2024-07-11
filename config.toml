@@ -1,4 +1,4 @@
-title = "Vijay Raja"
+title = "Sathish Kumar Thiyagarajan"
 baseURL = "https://example.com/"
 theme = "my-resume"
 languageCode = "en-us"
@@ -9,14 +9,13 @@ enableGitInfo = false
 
 [params]
 address = "Coimbatore, India"
-favicon = "/favicon.png"
-firstName = "Vijay"
-lastName = "Raja"
-phone = "7339480350"
-profileImage = "https://avatars.githubusercontent.com/u/89501520?v=4"
+favicon = "/favicon.ico"
+firstName = "Sathish Kumar"
+lastName = "Thiyagarajan"
+phone = "1-555-555-1234"
 showSocializations = true
 showContact = false
-sections = ["skills","publications","blog","creations","contributions","experience","education"]
+sections = ["skills","publications","creations","contributions","experience","education","blog"]
 
 
 [params.google]
@@ -25,11 +24,11 @@ sections = ["skills","publications","blog","creations","contributions","experien
 trackerID = "XX-123446-01"
 
 [[params.handles]]
-link = "https://www.linkedin.com/in/vijay-raja42/"
+link = "https://www.linkedin.com/in/sathishkumarthiyagarajan/"
 name = "LinkedIn"
 
 [[params.handles]]
-link = "https://github.com/vijaywhat/"
+link = "https://github.com/sathishk/"
 name = "GitHub"
 
 [outputs]
