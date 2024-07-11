@@ -1,20 +1,21 @@
 [
+    
     {
-        "role":"Boss man",
-        "company":"Current Company LTD",
-        "summary":"Led in development of fast paced software teams.\n- list\n- of\n- things",
-        "range":"February 2016 - Present"
+        "role":"Junior Software Developer",
+        "company":"uSiS Technologies Pvt. Ltd",
+        "summary":"Part-time During Higher studies \n I gained a lot of programming knowledge from this company \nand worked extensively in R&D projects",
+        "range":"May 2023 - Present"
     },
     {
-        "role":"Developer",
-        "company":"Current Company LTD",
-        "summary":"Expedited the synergies of collaborative agile tooling.",
-        "range":"March 2014 - February 2016"
-    },
-    {
-        "role":"Developer",
-        "company":"Previous Company Inc.",
-        "summary":"Implemented continuous devops pipelines automationing",
+        "role":"Junior Data Engineer",
+        "company":"SRMV College of Arts and Science · Part-time",
+        "summary":"I am working in Digital book creating field for Creating Notes for Computer Science Students",
         "range":"February 2013 - March 2014"
+    },
+    {
+        "role":"Video Editor",
+        "company":"JMC (Jaganthi media creation)",
+        "summary":"Location: Rajahmundry, Andhra Pradesh, India · On-site \n 4Months Internship on video editing and animation designing",
+        "range":"Apr 2023 - Jul 2023"
     }
 ]
