@@ -9,7 +9,7 @@ enableGitInfo = false
 
 [params]
 address = "Coimbatore, India"
-favicon = "/favicon.ico"
+favicon = "/favicon.png"
 firstName = "Vijay"
 lastName = "Raja"
 phone = "1-555-555-1234"

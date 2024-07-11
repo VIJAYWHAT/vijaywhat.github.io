@@ -1,0 +1,3 @@
+[submodule "themes/my-resume"]
+	path = themes/my-resume
+	url = https://github.com/techatpark/my-resume.git
