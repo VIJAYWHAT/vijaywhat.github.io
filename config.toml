@@ -15,7 +15,7 @@ lastName = "Raja"
 phone = "1-555-555-1234"
 showSocializations = true
 showContact = false
-sections = ["skills","publications","blog","creations","contributions","experience","education"]
+sections = ["skills","publications","blog","creations","experience","education"]
 
 
 [params.google]
