@@ -54,6 +54,7 @@ Overall, data de-identification is a critical aspect of data privacy, and organi
 
 In addition to these methods, there are also several standards and frameworks that organizations can use to ensure that their data de-identification practices are effective. These include the Health Insurance Portability and Accountability Act (HIPAA) de-identification standard, the Safe Harbor Method, and the Statistical De-identification Method.
 
+[vj](vj.html)
 ### Ref
 1. https://www.gemini.com/cryptopedia/anonymity-vs-pseudonymity-basic-differences#section-what-does-a-pseudonym-mean-in-crypto
 2. https://www.infoq.com/news/2023/01/aws-s3-default-encryption/
