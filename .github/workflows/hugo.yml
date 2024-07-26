@@ -63,6 +63,27 @@ jobs:
         with:
           path: ./public
 
+  # Python job
+  python-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'  # Specify the Python version you need
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Adjust this if you have specific dependencies
+
+      - name: Run Python script
+        run: |
+          python content\app.py
+
   # Deployment job
   deploy:
     environment:
