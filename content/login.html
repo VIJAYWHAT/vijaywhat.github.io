@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <form id="loginForm" action="https://vijaywhat.github.io/login" method="POST">
+    <form id="loginForm" action="" method="POST">
       <h2>Login</h2>
       <div class="input-field">
         <input type="text" id="email" required>
@@ -21,34 +21,7 @@
       <div id="error-message" style="color: red;"></div>
       <button type="submit">Log In</button>
     </form>
-  </div>
-  
-  <script>
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        var email = document.getElementById('email').value;
-        var password = document.getElementById('password').value;
-    
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://vijaywhat.github.io/login.html', true);
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                var errorMessage = document.getElementById('error-message');
-                if (xhr.responseText === "Success") {
-                    window.location.href = "dashboard.html"; // Redirect upon success
-                } else {
-                    errorMessage.textContent = xhr.responseText;
-                }
-            }
-        };
-    
-        xhr.send('email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password));
-    });
-    </script>
-    
+  </div>  
     
 </body>
 </html>
