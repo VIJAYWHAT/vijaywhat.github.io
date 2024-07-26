@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Login Form | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>I am Vijay</h1>
-    <h2>This is my website testing...</h2>
+  <div class="wrapper">
+    <form id="loginForm" action="#">
+      <h2>Login</h2>
+      <div class="input-field">
+        <input type="text" id="email" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" required>
+        <label>Enter your password</label>
+      </div>
+      <div id="error-message" style="color: red;"></div>
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+  <script src="login-validation/script.js"></script>
 </body>
 </html>
