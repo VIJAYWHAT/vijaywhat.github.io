@@ -3,7 +3,7 @@ name: Deploy Hugo site
 on:
   push:
     branches:
-      - main  # Trigger deployment on push to the main branch
+      - main
 
 jobs:
   build:
@@ -26,4 +26,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: gh-pages  # The branch where you want to deploy
+          publish_branch: gh-pages
