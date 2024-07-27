@@ -1,15 +1,29 @@
 function validateLogin(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    var errorMessage = document.getElementById('error-message');
-    var loadingMessage = document.getElementById('loading-message');
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+  var errorMessage = document.getElementById('error-message');
+  var loadingMessage = document.getElementById('loading-message');
 
-    // Show loading indicator
-    loadingMessage.style.display = 'block';
+  // Show loading indicator
+  loadingMessage.style.display = 'block';
 
-    fetch('credentials.json')
+  // Load the token from public/token.js
+  fetch('/token.js')
+    .then(response => response.text())
+    .then(tokenScript => {
+      var token = tokenScript.split('=')[1].trim();  // Extract the token value
+
+      // GitHub API URL for the raw credentials.json file
+      var githubApiUrl = 'https://api.github.com/repos/your-username/datas/contents/credentials.json';
+
+      fetch(githubApiUrl, {
+        headers: {
+          'Authorization': 'token ' + token,
+          'Accept': 'application/vnd.github.v3.raw'
+        }
+      })
       .then(response => response.json())
       .then(data => {
         var users = data.users;
@@ -27,7 +41,15 @@ function validateLogin(event) {
       .catch(error => {
         loadingMessage.style.display = 'none';
         errorMessage.textContent = 'An error occurred.';
+        console.error('Error fetching credentials:', error);
       });
-  }
+    })
+    .catch(error => {
+      loadingMessage.style.display = 'none';
+      errorMessage.textContent = 'An error occurred.';
+      console.error('Error loading token:', error);
+    });
+}
 
-  document.getElementById('loginForm').addEventListener('submit', validateLogin);
+document.getElementById('loginForm').addEventListener('submit', validateLogin);
+
