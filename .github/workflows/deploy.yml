@@ -21,7 +21,7 @@ jobs:
       - name: Create public directory and inject token
         run: |
           mkdir -p public
-          echo "const token = '${{ secrets.GITHUB_PAT }}';" > public/token.js
+          echo "const token = '${{ secrets.PAT }}';" > public/token.js
 
       - name: Build Hugo site
         run: hugo
