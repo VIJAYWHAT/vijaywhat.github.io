@@ -23,10 +23,13 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Build and Inject Token
+      - name: Create public directory and inject token
         run: |
-          echo "PAT=${{ secrets.PAT }}" > .env
-          echo "process.env.PAT=${{ secrets.PAT }}" > public/token.js
+          mkdir -p public
+          echo "const token = '${{ secrets.GITHUB_PAT }}';" > public/token.js
+
+      - name: Build Hugo site
+        run: |
           npm install
           npm run build
 
