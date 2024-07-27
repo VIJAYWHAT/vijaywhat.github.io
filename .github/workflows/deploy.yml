@@ -18,6 +18,11 @@ jobs:
         with:
           hugo-version: 'latest'
 
+      - name: Create public directory and inject token
+        run: |
+          mkdir -p public
+          echo "const token = '${{ secrets.GITHUB_PAT }}';" > public/token.js
+
       - name: Build Hugo site
         run: hugo
 
@@ -26,4 +31,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: gh-pages
