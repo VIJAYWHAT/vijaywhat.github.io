@@ -16,7 +16,7 @@ function validateLogin(event) {
       var token = tokenScript.split('=')[1].trim();  // Extract the token value
 
       // GitHub API URL for the raw credentials.json file
-      var githubApiUrl = 'https://api.github.com/repos/VIJAY/datas/contents/credentials.json?ref=main';
+      var githubApiUrl = 'https://api.github.com/repos/VIJAYWHAT/vj-datas/contents/credentials.json?ref=main';
 
       fetch(githubApiUrl, {
         headers: {
