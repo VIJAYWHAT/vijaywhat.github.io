@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Vijay Raja</title>
+    <link>https://example.com/</link>
+    <description>Recent content in Home on Vijay Raja</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Atlassian Deployment Triggers</title>
+      <link>https://example.com/projects/contributions/deploy-triggers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/projects/contributions/deploy-triggers/</guid>
+      <description>Addressed pretty significant page load performance issue founde in larger deployments. Eliminates uses of intensive backend query, replacing it with an asynchronous API call against a lucene index. This change reduces page load from from 2+ minutes to nearly instant, with an incredibly responsive UI.</description>
+    </item>
+    <item>
+      <title>Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development</title>
+      <link>https://example.com/blog/sjson/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/blog/sjson/</guid>
+      <description>During a casual discussion at the Bangalore Java User Group, the topic of JSON parsers sparked a debate on their pros and cons. This led to the inception of an innovative idea – creating yet another JSON parser, one that is tailor-made and hackable to cater specifically to the needs of API development. In this blog post, we&amp;rsquo;ll delve into the reasons behind the creation of SJSON and explore its unique features.</description>
+    </item>
+    <item>
+      <title>Basics of Cybersecurity - Data At Rest</title>
+      <link>https://example.com/publications/security-data_at_rest/</link>
+      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publications/security-data_at_rest/</guid>
+      <description>When it comes to protecting confidential information, we find that clients require different approaches or pose different protection needs. Some clients need to protect the information on their mobile computers or laptops in case they are lost. Others want to keep their documentation protected on file servers so that it can even be protected from improper access by IT staff. Sometimes some customers need to protect documentation when it travels attached to an email because they use managed email servers or in the cloud.</description>
+    </item>
+    <item>
+      <title>Added Docker Build Status Badge to shields.io</title>
+      <link>https://example.com/projects/contributions/shields-docker/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>https://example.com/projects/contributions/shields-docker/</guid>
+      <description>Shields.io is a massive library of badges that can be inserted into project README&amp;rsquo;s or websites displaying various statuses (code coverage, health, version, etc). Support for docker was missing the current build health, and was a pretty trivial addition.</description>
+    </item>
+    <item>
+      <title>Schema.org Structured Data documentation fixes</title>
+      <link>https://example.com/projects/contributions/schema-org/</link>
+      <pubDate>Tue, 07 Jan 2020 17:08:21 +0000</pubDate>
+      <guid>https://example.com/projects/contributions/schema-org/</guid>
+      <description>While adding Structured Data to a client&amp;rsquo;s website I found some example JSON that was invalid. Simple contribution to cleanup the user documentation providing syntactically valid JSON documents.</description>
+    </item>
+    <item>
+      <title>Comprehensive Banking System in C: A Beginner&#39;s Guide to Advanced Concepts</title>
+      <link>https://example.com/projects/creations/banking_c/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <guid>https://example.com/projects/creations/banking_c/</guid>
+      <description>Overview This project is a console-based banking application written in C, designed to cover a wide range of concepts from basic to advanced levels. It demonstrates the use of structures, file handling, string manipulation, and control structures, making it an excellent resource for beginners looking to deepen their understanding of C programming and real-world applications.&#xA;Code Structure The program consists of two main files:&#xA;bank.h: Header file containing function declarations, structure definitions, and macros.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.com/dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/dashboard/</guid>
+      <description>&lt;!DOCTYPE html&gt; dashboard Dashboard </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.com/login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/login/</guid>
+      <description>&lt;!DOCTYPE html&gt; Vj Personal Login Login Enter your email Enter your password Loading... Log In </description>
+    </item>
+    <item>
+      <title>Search Results</title>
+      <link>https://example.com/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.&#xA;No content shown here is rendered, all content is based in the template layouts/page/search.html&#xA;Setting a very low sitemap priority will tell search engines this is not important content.&#xA;This implementation uses Fusejs, jquery and mark.js&#xA;Initial setup Search depends on additional output content type of JSON in config.toml&#xA;[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;] Searching additional fileds To search additional fields defined in front matter, you must add it in 2 places.</description>
+    </item>
+  </channel>
+</rss>

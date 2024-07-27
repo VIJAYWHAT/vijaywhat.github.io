@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Vijay Raja</title>
+    <link>https://example.com/tags/</link>
+    <description>Recent content in Tags on Vijay Raja</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API Development</title>
+      <link>https://example.com/tags/api-development/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/api-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java Development</title>
+      <link>https://example.com/tags/java-development/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/java-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JSON</title>
+      <link>https://example.com/tags/json/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/json/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JSON Parser</title>
+      <link>https://example.com/tags/json-parser/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/json-parser/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SJSON</title>
+      <link>https://example.com/tags/sjson/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/sjson/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Engineering</title>
+      <link>https://example.com/tags/software-engineering/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/software-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agile</title>
+      <link>https://example.com/tags/agile/</link>
+      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/agile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>https://example.com/tags/cybersecurity/</link>
+      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data at Rest</title>
+      <link>https://example.com/tags/data-at-rest/</link>
+      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/data-at-rest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Security</title>
+      <link>https://example.com/tags/data-security/</link>
+      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/data-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pseudonymization</title>
+      <link>https://example.com/tags/pseudonymization/</link>
+      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/pseudonymization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Secret Key</title>
+      <link>https://example.com/tags/secret-key/</link>
+      <pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/secret-key/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://example.com/tags/docker/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>https://example.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>https://example.com/tags/javascript/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>https://example.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Node.js</title>
+      <link>https://example.com/tags/node.js/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>https://example.com/tags/node.js/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rest APIs</title>
+      <link>https://example.com/tags/rest-apis/</link>
+      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <guid>https://example.com/tags/rest-apis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Advanced C Concepts</title>
+      <link>https://example.com/tags/advanced-c-concepts/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <guid>https://example.com/tags/advanced-c-concepts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Banking Application</title>
+      <link>https://example.com/tags/banking-application/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <guid>https://example.com/tags/banking-application/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C Programming</title>
+      <link>https://example.com/tags/c-programming/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <guid>https://example.com/tags/c-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>File Handling</title>
+      <link>https://example.com/tags/file-handling/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <guid>https://example.com/tags/file-handling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Real-World Application</title>
+      <link>https://example.com/tags/real-world-application/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <guid>https://example.com/tags/real-world-application/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>User Authentication</title>
+      <link>https://example.com/tags/user-authentication/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <guid>https://example.com/tags/user-authentication/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bamboo</title>
+      <link>https://example.com/tags/bamboo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/bamboo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>https://example.com/tags/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JQuery</title>
+      <link>https://example.com/tags/jquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/jquery/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

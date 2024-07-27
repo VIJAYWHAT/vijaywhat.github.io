@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>API Development on Vijay Raja</title>
+    <link>https://example.com/tags/api-development/</link>
+    <description>Recent content in API Development on Vijay Raja</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/tags/api-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development</title>
+      <link>https://example.com/blog/sjson/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/blog/sjson/</guid>
+      <description>During a casual discussion at the Bangalore Java User Group, the topic of JSON parsers sparked a debate on their pros and cons. This led to the inception of an innovative idea – creating yet another JSON parser, one that is tailor-made and hackable to cater specifically to the needs of API development. In this blog post, we&amp;rsquo;ll delve into the reasons behind the creation of SJSON and explore its unique features.</description>
+    </item>
+  </channel>
+</rss>
