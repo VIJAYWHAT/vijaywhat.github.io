@@ -3,7 +3,7 @@ name: Deploy Hugo site
 on:
   push:
     branches:
-      - main
+      - main  # Trigger deployment on push to the main branch
 
 jobs:
   build:
@@ -18,16 +18,12 @@ jobs:
         with:
           hugo-version: 'latest'
 
-      - name: Create public directory and inject token
-        run: |
-          mkdir -p public
-          echo "const token = '${{ secrets.PAT }}';" > public/token.js
-
       - name: Build Hugo site
         run: hugo
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # token testing complete
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: gh-pages  # The branch where you want to deploy
