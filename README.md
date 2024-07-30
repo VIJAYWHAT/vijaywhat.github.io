@@ -1,6 +1,4 @@
 # vijaywhat.github.io
-Profile Page Sample
-
 ## Setup
 
 ```sh
