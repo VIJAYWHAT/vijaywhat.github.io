@@ -1,1 +1,1 @@
-const token = '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';
+const token = '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';
