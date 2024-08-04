@@ -6,7 +6,7 @@ function validateLogin(event) {
   var errorMessage = document.getElementById('error-message');
   var loadingMessage = document.getElementById('loading-message');
 
-  // Show loading indicator
+  // loading indicator
   loadingMessage.style.display = 'block';
 
   
