@@ -10,5 +10,5 @@ outputs:
 - json
 ---
 
-Self Learning Software Engineer, passionate about technology and programming languages with a focus on C, Java and Python specialized in R&D and POC. 
+Self Learning Software Engineer and Open source contriputor, passionate about technology and programming languages with a focus on C, Java and Python specialized in R&D and POC. 
 
