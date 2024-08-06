@@ -18,6 +18,8 @@ I am Vijay Raja. I am an open-source, full-stack developer.
 
 I thank Bangalore JUG for giving me this wonderful opportunity to share my practical experience with you all. What I'm going to talk about is based on my experience building an open-source project called Gurukulams.
 
+-----------------------------------------------
+
 Gurukulams is an online education platform built by students for students.
 
 80% of the contributions come from people with little or no experience. In fact, most of our contributors are either teachers or students.
@@ -25,6 +27,8 @@ Gurukulams is an online education platform built by students for students.
 This means we need to create a codebase that is simple and secure so everyone can collaborate and contribute.
 
 Our CI/CD practices have to go through all the quality checks to make sure any contribution we get is of good quality.
+
+--------------------------------------------------
 
 Now let me explain our approach to CI/CD pipelines, which has three main parts.
 
@@ -35,6 +39,8 @@ Secondly, we want to make sure all of our contributions follow the architectural
 And lastly, and most importantly, we want to make sure our codebase is thoroughly tested with 100% coverage. We do this with a tool called JaCoCo.
 
 We expected these practices would give us better control over our software. But we were surprised by an unexpected challenge.
+
+----------------------------------------------
 
 Our application, originally developed with Spring Boot 2, went through many changes. However, developers found it difficult to keep the codebase up-to-date with new versions. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.
 
