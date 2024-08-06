@@ -9,7 +9,7 @@ const repoOwner = 'vijaywhat';
 const repoName = 'vj-datas';
 const filePath = 'credentials.json';
 const accessToken = config.GITHUB_TOKEN;
-const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/${filePath}`;
 
 fetch(apiUrl, {
     headers: {
