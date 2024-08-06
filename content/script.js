@@ -6,16 +6,16 @@ function validateLogin(event) {
   var errorMessage = document.getElementById('error-message');
   var loadingMessage = document.getElementById('loading-message');
 
-  // Show loading indicator
+  // loading indicator
   loadingMessage.style.display = 'block';
 
-  // Load the token from public/token.js
+  
   fetch('/token.js')
     .then(response => response.text())
     .then(tokenScript => {
       var token = tokenScript.split('=')[1].trim();  // Extract the token value
       console.log('Token:', token);  // Log the token to inspect it
-      // GitHub API URL for the raw credentials.json file
+       credentials.json file
       var githubApiUrl = 'https://api.github.com/repos/VIJAYWHAT/vj-datas/contents/credentials.json?ref=main';
 
       fetch(githubApiUrl, {
