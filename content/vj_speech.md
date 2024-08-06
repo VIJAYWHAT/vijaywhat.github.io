@@ -12,28 +12,36 @@ sitemap:
   priority : 0.8
 ---
 
+**Good morning everyone,**
 
-**Good morning everyone**,
+I am Vijay Raja. I am an open-source, full-stack developer.
 
-This is Vijay Raja. i am an open source and full Stack developer. 
+I thank Bangalore JUG   for giving me this wonderful opportunity   to share my practical experience with you all. What I'm going to talk about is based on my experience building an open-source project called Gurukulams.
 
-I thank bangalore jug for giving me this wonderful opportunity to Share my practical experience with you. whatever that i'm going to talk today is based on my Experience in building an open source platform called gurukulams.com.
+Gurukulams is an online education platform built by students for students.
 
-Gurukulam.com is an online education Platform it's built by the students for the students.
+80% of the contributions come from people with little or no experience. In fact, most of our contributors are either teachers or students.
 
-being an opensource project. 80% of contribution comes from either people with lesser experience or no experience, infact the majority of our contributor are mostly teacher and students. This actually demands us to create a code base, That expect a safe and secure platform for everyone to come and contribute. our CI/CD practices will go through all the quality checks to make sure the contribution we receive are in good quality. 
+This means we need to create a codebase that is simple and secure so everyone can collaborate and contribute.
 
-now let me explain our approach towards the CI/CD pipelines. our approach is concerned about Three major aspects. that is considered for every Contributions.
+Our CI/CD practices have to go through all the quality checks to make sure any contribution we get is of good quality.
 
-Firstly, we make would like to sure everyone followed proper coding Standard, we do that through a tool called check style through, and
+Now let me explain our approach to CI/CD pipelines, which has three main parts.
 
-Secondly, we would like to make sure all of our contribution follows the architectural guidelines that we have setup and we achieve that through a tool call Arc Unit.
+Firstly, we want to make sure everyone follows proper **coding standards**. We do this with a tool called Checkstyle.
 
-And last and the most important one is we would like to make sure our code base is thoroughly tested. We always aim for 100% coverage we do this through a tool called jacoco.
+Secondly, we want to make sure all of our contributions follow the **architectural guidelines** we have set up. We achieve this with a tool called ArchUnit.
 
-All this we expected that, this will give us a better control over our software.
-but wait,
-we were in for a suprise with an unexpected challenge.
+And lastly, and most importantly, we want to make sure our **codebase is thoroughly tested** with **100% coverage**. We do this with a tool called JaCoCo.
 
+We expected these practices would give us better control over our software. But we were surprised by an unexpected challenge.
 
-Now let me explain the project... 
+Our application, originally developed with Spring Boot 2, went through many changes. However, developers found it difficult to keep the codebase up-to-date with new versions. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.
+
+Consider this: When you receive a new Android update on your phone, you typically upgrade without hesitation, understanding the benefits it brings and the potential issues it fixes. However, in software development, the mindset often shifts. Developers frequently question why they should upgrade, focusing on potential disruptions or the effort required, rather than proactively seeking improvements.
+
+The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase.
+
+Shouldn’t the approach be the opposite? We should upgrade by default and seek reasons/excuses only if we don’t.
+
+Now i will demonstrate how we solve this challenge. 

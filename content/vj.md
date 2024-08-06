@@ -12,7 +12,7 @@ sitemap:
   priority : 0.8
 ---
 
-Good morning everyone,
+**Good morning everyone,**
 
 I am Vijay Raja. I am an open-source, full-stack developer.
 
