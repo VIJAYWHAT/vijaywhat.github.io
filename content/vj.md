@@ -55,3 +55,22 @@ We expected these practices would give us better control over our software. But 
 Imagine the benefits: a healthier, more secure, and efficient codebase”
 
 “Just as we trust that an Android update will keep our phones running smoothly, we should trust that regular updates will do the same for our software. It’s about shifting our mindset from reactive to proactive, ensuring our applications are always ready for whatever comes next.”
+
+----------------------------------------------
+
+### Our Approach
+
+To address technical debt and keep our codebase up-to-date, we implemented these steps:
+
+**Automated Dependency Updates:** We use the Maven Versions plugin with its “Upgrade” goal. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named pom.xml.versionsBackup and updates the pom.xml file with the new versions.
+
+```
+mvn versions:update-parent versions:update-properties
+```
+
+**Build Failure on Pending Upgrades:** To enforce these updates, we use the Maven Enforcer plugin. It checks for the existence of the pom.xml.versionsBackup file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.
+
+```
+mvn clean package
+```
+**To manage exceptions:** Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.
