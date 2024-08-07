@@ -62,15 +62,20 @@ Imagine the benefits: a healthier, more secure, and efficient codebase”
 
 To address technical debt and keep our codebase up-to-date, we implemented these steps:
 
-**Automated Dependency Updates:** We use the Maven Versions plugin with its “Upgrade” goal. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named pom.xml.versionsBackup and updates the pom.xml file with the new versions.
+**Automated Dependency Updates:** We use the Maven Versions plugin with the goal of “Upgrade”. This tool scans our project and checks for the latest versions of all our dependencies. If it finds any updates, it automatically updates the pom.xml file and creates a backup called pom.xml.versionsBackup. This way, we’re always aware of the latest updates and can act on them immediately.”
 
 ```
 mvn versions:update-parent versions:update-properties
 ```
 
-**Build Failure on Pending Upgrades:** To enforce these updates, we use the Maven Enforcer plugin. It checks for the existence of the pom.xml.versionsBackup file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.
+**Build Failure on Pending Upgrades:** 
+
+To enforce these updates, we use the Maven Enforcer plugin. It checks for the backup file if the backup file pom.xml.versionsBackup is found, it means there are pending updates. In this case, the build process fails. This forces us to address the updates right away”
 
 ```
 mvn clean package
 ```
-**To manage exceptions:** Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.
+
+**Managing Exceptions:**
+
+“Of course, there are times when certain updates need to be excluded — Maybe due to cause issues or are critical to our project. To handle this, we’ve set up a way to skip these specific updates without affecting the rest of the process. This ensures that we can still keep our codebase up-to-date while dealing with any special cases separately.”
