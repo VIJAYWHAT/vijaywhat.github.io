@@ -30,6 +30,8 @@ Our CI/CD practices have to go through all the quality checks to make sure any c
 
 --------------------------------------------------
 
+### Traditional CI/CD
+
 Now let me explain our approach to CI/CD pipelines, which has three main parts.
 
 Firstly, we want to make sure everyone follows proper coding standards. We do this with a tool called Checkstyle.
@@ -42,10 +44,14 @@ We expected these practices would give us better control over our software. But 
 
 ----------------------------------------------
 
-Our application, originally developed with Spring Boot 2, went through many changes. However, developers found it difficult to keep the codebase up-to-date with new versions. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.
+### The Challenge
 
-Consider this: When you receive a new Android update on your phone, you typically upgrade without hesitation, understanding the benefits it brings and the potential issues it fixes. However, in software development, the mindset often shifts. Developers frequently question why they should upgrade, focusing on potential disruptions or the effort required, rather than proactively seeking improvements.
+“Imagine you just received a notification on your phone about a new Android update. Most of us don’t think twice—we hit ‘Update,’ knowing it will bring improvements, fix bugs, and maybe even introduce new features.  right?”
 
-The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase.
+“But in software development, the mindset often shifts. When it comes to upgrading the codebase, many developers hesitate. Question Why? They worry about potential disruptions, the effort involved, and sometimes, it’s just easier to leave things as they are. This leads to a significant problem: technical debt.”
 
-Shouldn’t the approach be the opposite? We should upgrade by default and seek reasons/excuses only if we don’t.
+“Shouldn’t the approach be the opposite?, as developers, we upgrade by default and only seek excuses if we don’t
+
+Imagine the benefits: a healthier, more secure, and efficient codebase”
+
+“Just as we trust that an Android update will keep our phones running smoothly, we should trust that regular updates will do the same for our software. It’s about shifting our mindset from reactive to proactive, ensuring our applications are always ready for whatever comes next.”
