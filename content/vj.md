@@ -95,6 +95,29 @@ also it tells the details -> Please check if you have any older dependencies.
 
 we acheive this with the help of maven enforcer plugin
 
+we see the enforcer plugin configuration in our code.
+
+here you can see that enforcer plugin in my pom.xml file, we configure rules for that, 
+
+we fails the build when the pom.xml.backupversion file is exist, in running of maven version plugin command,
+
+if its find any latest upgrades it will update the pom.xml file and also create a file called pom.xml.backupversion.
+
+we use this to check the updates are available or not, in our case we have a upgrade so we fails the build. 
+
+
+as a devops we want to make sure we give a option for development team to exclude any version, becuase that purticular verion upgrade might take time or something like that,
+
+we need to make sure we accomdate that as well as.
+
+to acheive this we can add entry in this file, for that dependency
+
+then we again try to check the version upgrade.
+
+i am running this command again, here you see that it checking for dependecy and have it was exclude the jsonwebtoken.
+
+it was succesfully excluded.
+
 
 
 **Automated Dependency Updates:**
