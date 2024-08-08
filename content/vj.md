@@ -34,11 +34,11 @@ Our CI/CD practices have to go through all the quality checks to make sure any c
 
 Now let me explain our approach to CI/CD pipelines, which has three main parts.
 
-Firstly, we want to make sure everyone follows proper coding standards. We do this with a tool called Checkstyle.
+Firstly, we want to make sure everyone follows proper **coding standards**. We do this with a tool called **Checkstyle**.
 
-Secondly, we want to make sure all of our contributions follow the architectural guidelines we have set up. We achieve this with a tool called ArchUnit.
+Secondly, we want to make sure all of our contributions follow the **architectural guidelines** we have set up. We achieve this with a tool called **ArchUnit**.
 
-And lastly, and most importantly, we want to make sure our codebase is thoroughly tested with 100% coverage. We do this with a tool called JaCoCo.
+And lastly, and most importantly, we want to make sure our **codebase is thoroughly tested** with **100% coverage**. We do this with a tool called **JaCoCo**.
 
 We expected these practices would give us better control over our software. But we were surprised by an unexpected challenge.
 
@@ -52,9 +52,9 @@ We expected these practices would give us better control over our software. But 
 
 “Shouldn’t the approach be the opposite?, as developers, we upgrade by default and only seek excuses if we don’t
 
-Imagine the benefits: a healthier, more secure, and efficient codebase”
+Imagine the benefits: a **healthier**, more **secure**, and **efficient** codebase”
 
-“Just as we trust that an Android update will keep our phones running smoothly, we should trust that regular updates will do the same for our software. It’s about shifting our mindset from reactive to proactive, ensuring our applications are always ready for whatever comes next.”
+“Just as we trust that an Android update will keep our phones running smoothly, we should trust that regular updates will do the same for our software. It’s about shifting our mindset from **reactive** to **proactive**, ensuring our applications are always ready for whatever comes next.”
 
 ----------------------------------------------
 
@@ -62,7 +62,7 @@ Imagine the benefits: a healthier, more secure, and efficient codebase”
 
 To address technical debt and keep our codebase up-to-date, we implemented these steps:
 
-**Automated Dependency Updates:** We use the Maven Versions plugin with the goal of “Upgrade”. This tool scans our project and checks for the latest versions of all our dependencies. If it finds any updates, it automatically updates the pom.xml file and creates a backup called pom.xml.versionsBackup. This way, we’re always aware of the latest updates and can act on them immediately.”
+**Automated Dependency Updates:** We use the Maven Versions plugin with the goal of **“Upgrade”**. This tool scans our project and checks for the latest versions of all our dependencies. If it finds any updates, it automatically updates the pom.xml file and creates a backup called pom.xml.versionsBackup. This way, we’re always aware of the latest updates and can act on them immediately.”
 
 ```
 mvn versions:update-parent versions:update-properties
@@ -70,7 +70,7 @@ mvn versions:update-parent versions:update-properties
 
 **Build Failure on Pending Upgrades:** 
 
-To enforce these updates, we use the Maven Enforcer plugin. It checks for the backup file if the backup file pom.xml.versionsBackup is found, it means there are pending updates. In this case, the build process fails. This forces us to address the updates right away”
+To enforce these updates, we use the Maven Enforcer plugin. It **checks for the backup file** if the backup file **pom.xml.versionsBackup** is found, it means there are pending updates. In this case, the build process fails. This forces us to address the updates right away”
 
 ```
 mvn clean package
@@ -78,4 +78,4 @@ mvn clean package
 
 **Managing Exceptions:**
 
-“Of course, there are times when certain updates need to be excluded — Maybe due to cause issues or are critical to our project. To handle this, we’ve set up a way to skip these specific updates without affecting the rest of the process. This ensures that we can still keep our codebase up-to-date while dealing with any special cases separately.”
+“Of course, there are times when certain updates need to be excluded — Maybe due to cause issues or are critical to our project. To handle this, we’ve set up a way to **skip these specific updates** without affecting the rest of the process. This ensures that we can still keep our codebase up-to-date while dealing with any special cases separately.”
