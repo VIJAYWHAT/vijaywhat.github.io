@@ -47,26 +47,6 @@ i invite raja to explain further,
 
 ----------------------------------------------
 
-### Our Solutions
-
-Thank you Raja,
-
-Let me explain the solutions,
-
-from the devops side we have three step in our solution,
-
-First, we need to figure out are there any latest upgrades available.
-
-Next, if yes, we need to failed our build,
-
-but them, in case development team want some time or has valid reasons not to upgrade.
-
-we need to accomtade them also, 
-
-let me show through a demo,
-
-------------------------
-
 // open Bash
 
 we use maven version plugin with the goal of update parent and update properties,
@@ -78,7 +58,7 @@ it will check the parent section in my project and it have latest version availa
 
 and i am using update-properties, it will check the properties section in my project, if any dependencies have a latest version to upgrade, i will update that in my pom.xml file,
 
-now let us see that commands exucution completed or not, 
+now let us see that commands execution completed or not, 
 
 ok its completed, 
 
@@ -89,13 +69,13 @@ now i was showing updated to 0.11.5 to 0.12.6, it also updated in my pox.xml fil
 now we see the pom.xml file, here you can see that i was already in 0.11.5 and now it is updated into 0.12.6
 
 now we try to build the project, as a devops engineer i want to make sure the build fails,
-because we have upgrade in one dependency. the development team was not updates that,
+because we have upgraded one dependency. the development team was not updates that,
 
 we want to make sure that the build fails or not. **build was failed**.
 
 also it tells the details -> Please check if you have any older dependencies.
 
-we acheive this with the help of maven enforcer plugin
+we achieve this with the help of maven enforcer plugin
 
 we see the enforcer plugin configuration in our code.
 
@@ -103,30 +83,29 @@ here you can see that enforcer plugin in my pom.xml file, we configure rules for
 
 we fails the build when the pom.xml.backupversion file is exist, in running of maven version plugin command,
 
-if its find any latest upgrades it will update the pom.xml file and also create a file called pom.xml.backupversion.
+If it finds any latest upgrades it will update the pom.xml file and also create a file called pom.xml.backupversion.
 
-we use this to check the updates are available or not, in our case we have a upgrade so we fails the build. 
+we use this to check if the updates are available or not, in our case we have an upgrade, so we fails the build. 
 
+as a devops we want to make sure we give a option for development team to exclude any version, because that particular version upgrade might take time or something like that,
 
-as a devops we want to make sure we give a option for development team to exclude any version, becuase that purticular verion upgrade might take time or something like that,
+we need to make sure we accommodate that as well as.
 
-we need to make sure we accomdate that as well as.
-
-to acheive this we can add entry in this file, for that dependency
+to achieve this we can add entry in this file, for that dependency
 
 then we again try to check the version upgrade.
 
-i am running this command again, here you see that it checking for dependecy and have it was exclude the jsonwebtoken.
+i am running this command again, here you see that it is checking for dependency and it excluded the jsonwebtoken.
 
-it was succesfully excluded.
+it was successfully excluded.
 
 now we just to make sure we can check backfile created or not, 
 
-here we don't have any backupfil created, so the build will success.
+here we don't have any backup file created, so the build will succeed.
 
 that's all i had thank you,
 
-now i invite raja to explain further.
+Now I invite Raja to explain further.
 
 
 **Automated Dependency Updates:**
