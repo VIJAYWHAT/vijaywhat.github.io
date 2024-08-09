@@ -46,7 +46,19 @@ We expected these practices would give us better control over our software. But 
 i invite raja to explain further,
 
 ----------------------------------------------
+Our Solutions
 
+Thank you Raja, Let me explain the solutions,
+
+From the devops side we have three step in our solution,
+First, we need to figure out are there any latest versions available.
+Next, if yes, we need to enforce the build fails,
+
+but them, in case the development team wants some time or has valid reasons not to upgrade.
+
+we need to exclude those versions, let me show through a demo,
+
+----------------------------------------------
 // open Bash
 
 we use maven version plugin with the goal of update parent and update properties,
@@ -60,7 +72,7 @@ and i am using update-properties, it will check the properties section in my pro
 
 in order to achieve it, version plugin will check with the meta data that is available in the maven center to get the latest version.
 
-incaseit find the latest version it update my pom.xml file.
+incase if find the latest version it update my pom.xml file.
 
 now let us see that commands execution completed or not, 
 
@@ -68,6 +80,7 @@ ok its completed,
 
 now here you see it check version for all the dependency and almost every dependencies in latest version, 
 except this jsonwebtoken plugin, 
+
 now i was showing updated to 0.11.5 to 0.12.6, it also updated in my pox.xml file,
 
 now we see the pom.xml file, here you can see that i was already in 0.11.5 and now it is updated into 0.12.6
@@ -91,9 +104,12 @@ If it finds any latest upgrades it will update the pom.xml file and also create 
 
 we use this to check if the updates are available or not, in our case we have an upgrade, so we fails the build. 
 
-as a devops we want to make sure we give a option for development team to exclude any version, because that particular version upgrade might take time or something like that,
 
-we need to make sure we accommodate that as well as.
+
+
+as a devops we want to make sure we give a option for development team to exclude any version, because that particular version upgrade might take time or has some valid reasons,
+
+we need to make sure we accommodate them.
 
 to achieve this we can add entry in this file, for that dependency
 
