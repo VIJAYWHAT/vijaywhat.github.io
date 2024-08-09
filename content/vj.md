@@ -68,7 +68,7 @@ let me show through a demo,
 // open Bash
 
 we use maven version plugin with the goal of update parent and update properties,
-// mvn versions:update-parent versions:update-properties
+// ./mvnw.cmd versions:update-parent versions:update-properties
 
 now we see the maven version plugin, here i am using the update-parent
 
