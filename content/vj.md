@@ -58,6 +58,10 @@ it will check the parent section in my project and it have latest version availa
 
 and i am using update-properties, it will check the properties section in my project, if any dependencies have a latest version to upgrade, i will update that in my pom.xml file,
 
+in order to achieve it, version plugin will check with the meta data that is available in the maven center to get the latest version.
+
+incaseit find the latest version it update my pom.xml file.
+
 now let us see that commands execution completed or not, 
 
 ok its completed, 
