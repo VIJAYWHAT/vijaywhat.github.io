@@ -33,7 +33,7 @@ Our CI/CD practices have to go through    all the quality checks to make sure   
 
 ### Traditional CI/CD
 
-Now let me explain our approach to CI/CD pipelines, which has three main parts.
+Now let me explain our approach towards CI/CD pipelines, which has three main parts.
 
 At first, we want to make sure everyone follows proper **coding standards**. We do this with a tool called **Checkstyle**.
 
@@ -57,7 +57,7 @@ from the devops side we have three step in our solution,
 
 First, we need to figure out are there any latest upgrades available.
 
-Next, if yes, we need to failed out build,
+Next, if yes, we need to failed our build,
 
 but them, in case development team want some time or has valid reasons not to upgrade.
 
