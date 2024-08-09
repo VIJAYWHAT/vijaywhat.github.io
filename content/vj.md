@@ -65,6 +65,8 @@ we need to accomtade them also,
 
 let me show through a demo,
 
+------------------------
+
 // open Bash
 
 we use maven version plugin with the goal of update parent and update properties,
