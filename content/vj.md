@@ -46,6 +46,7 @@ We expected these practices would give us better control over our software. But 
 i invite raja to explain further,
 
 ----------------------------------------------
+
 Our Solutions
 
 Thank you Raja, Let me explain the solutions,
@@ -59,6 +60,7 @@ but them, in case the development team wants some time or has valid reasons not 
 we need to exclude those versions, let me show through a demo,
 
 ----------------------------------------------
+
 // open Bash
 
 we use maven version plugin with the goal of update parent and update properties,
@@ -104,8 +106,7 @@ If it finds any latest upgrades it will update the pom.xml file and also create 
 
 we use this to check if the updates are available or not, in our case we have an upgrade, so we fails the build. 
 
-
-
+------------------------------------------
 
 as a devops we want to make sure we give a option for development team to exclude any version, because that particular version upgrade might take time or has some valid reasons,
 
@@ -126,7 +127,6 @@ here we don't have any backup file created, so the build will succeed.
 that's all i had thank you,
 
 Now I invite Raja to explain further.
-
 
 **Automated Dependency Updates:**
 
