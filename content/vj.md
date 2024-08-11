@@ -85,8 +85,8 @@ now i was showing updated to 0.11.5 to 0.12.6, it also updated in my pox.xml fil
 
 now we see the pom.xml file, here you can see that i was already in 0.11.5 and now it is updated into 0.12.6
 
-now we try to build the project, as a devops engineer i want to make sure the build fails,
-because we have upgraded one dependency. the development team was not updates that,
+now we try to build the project, as a devops engineer i want to enforce the build failure,
+because we found update in Jsonwebtoken dependency.but, the development team didn't upgraded too,
 
 we want to make sure that the build fails or not. **build was failed**.
 
