@@ -43,12 +43,12 @@ And lastly, and most importantly, we want to make sure our **codebase is thoroug
 
 We expected these practices would give us better control over our software. But we were surprised by an unexpected challenge.
 
-i invite raja to explain further,
+i invite *** to explain further,
 
 ----------------------------------------------
 Our Solutions
 
-Thank you Raja, Let me explain the solutions,
+Thank you ***, Let me explain the solutions,
 
 From the devops side we have three step in our solution,
 First, we need to figure out are there any latest versions available.
@@ -125,7 +125,7 @@ here we don't have any backup file created, so the build will succeed.
 
 that's all i had thank you,
 
-Now I invite Raja to explain further.
+Now I invite *** to explain further.
 
 
 **Automated Dependency Updates:**
