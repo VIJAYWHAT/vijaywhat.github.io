@@ -43,13 +43,13 @@ And lastly, and most importantly, we want to make sure our **codebase is thoroug
 
 We expected these practices would give us better control over our software. But we were surprised by an unexpected challenge.
 
-i invite raja to explain further,
+i invite *** to explain further,
 
 ----------------------------------------------
 
 Our Solutions
 
-Thank you Raja, Let me explain the solutions,
+Thank you ***, Let me explain the solutions,
 
 From the devops side we have three step in our solution,
 First, we need to figure out are there any latest versions available.
@@ -87,8 +87,8 @@ now i was showing updated to 0.11.5 to 0.12.6, it also updated in my pox.xml fil
 
 now we see the pom.xml file, here you can see that i was already in 0.11.5 and now it is updated into 0.12.6
 
-now we try to build the project, as a devops engineer i want to make sure the build fails,
-because we have upgraded one dependency. the development team was not updates that,
+now we try to build the project, as a devops engineer i want to enforce the build failure,
+because we found update in Jsonwebtoken dependency.but, the development team didn't upgraded too,
 
 we want to make sure that the build fails or not. **build was failed**.
 
@@ -126,7 +126,7 @@ here we don't have any backup file created, so the build will succeed.
 
 that's all i had thank you,
 
-Now I invite Raja to explain further.
+Now I invite *** to explain further.
 
 **Automated Dependency Updates:**
 
