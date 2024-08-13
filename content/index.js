@@ -19,15 +19,45 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firestore
 const db = getFirestore(app);
 
+// Store the data retrieved from Firestore
+let usersData = [];
 
 // Function to get data from Firestore
 async function getData() {
-    
-    const Snapshot = await getDocs(collection(db, "profile"));
-    Snapshot.forEach((doc) => {
-        console.log(`${doc.id} => ${JSON.stringify(doc.data())}`);
+    const snapshot = await getDocs(collection(db, "profile"));
+    snapshot.forEach((doc) => {
+        usersData.push(doc.data()); // Store user data in the array
     });
 }
 
 // Call the function to get data
-getData();
+await getData();
+
+// Function to handle form submission
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const errorMessage = document.getElementById('error-message');
+    const loadingMessage = document.getElementById('loading-message');
+
+    // Show loading message
+    loadingMessage.style.display = 'block';
+    errorMessage.textContent = '';
+
+    // Validate user credentials
+    const user = usersData.find(user => user.email === email && user.password === password);
+
+    // Hide loading message
+    loadingMessage.style.display = 'none';
+
+    if (user) {
+        // Successful login
+        window.location.href = 'vj';
+        
+    } else {
+        // Show error message
+        errorMessage.textContent = 'Invalid email or password';
+    }
+});
