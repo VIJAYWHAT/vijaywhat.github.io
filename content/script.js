@@ -15,7 +15,7 @@ function validateLogin(event) {
     .then(tokenScript => {
       var token = tokenScript.split('=')[1].trim();  // Extract the token value
       console.log('Token:', token);  // Log the token to inspect it
-       credentials.json file
+       credentials.json
       var githubApiUrl = 'https://api.github.com/repos/VIJAYWHAT/vj-datas/contents/credentials.json?ref=main';
 
       fetch(githubApiUrl, {
