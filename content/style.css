@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -15,135 +15,97 @@ body{
     background-color: #4070f4;
 }
 
-.container{
-    position: relative;
+.wrapper {
     max-width: 430px;
     width: 100%;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 0 20px;
-}
-
-.container .forms{
-    display: flex;
-    align-items: center;
-    height: 440px;
-    width: 200%;
-    transition: height 0.2s ease;
-}
-
-
-.container .form{
-    width: 50%;
     padding: 30px;
-    background-color: #fff;
-    transition: margin-left 0.18s ease;
 }
 
-.container.active .login{
-    margin-left: -50%;
-    opacity: 0;
-    transition: margin-left 0.18s ease, opacity 0.15s ease;
-}
-
-.container.active .forms{
-    height: 600px;
-}
-.container .form .title{
-    position: relative;
+.title {
     font-size: 27px;
     font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.form .title::before{
+.title::before {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -5px;
     height: 3px;
     width: 30px;
     background-color: #4070f4;
     border-radius: 25px;
 }
 
-.form .input-field{
+.input-field {
     position: relative;
-    height: 50px;
-    width: 100%;
     margin-top: 30px;
 }
 
-.input-field input{
-    position: absolute;
-    height: 100%;
+.input-field input {
     width: 100%;
-    padding: 0 35px;
+    padding: 10px 35px;
     border: none;
-    outline: none;
-    font-size: 16px;
     border-bottom: 2px solid #ccc;
-    border-top: 2px solid transparent;
-    transition: all 0.2s ease;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
 }
 
-.input-field input:is(:focus, :valid){
+.input-field input:focus {
     border-bottom-color: #4070f4;
+    outline: none;
 }
 
-.input-field i{
+.input-field i.icon {
     position: absolute;
     top: 50%;
+    left: 10px;
     transform: translateY(-50%);
     color: #999;
     font-size: 23px;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 }
 
-.input-field input:is(:focus, :valid) ~ i{
+.input-field input:focus ~ i.icon {
     color: #4070f4;
 }
 
-.input-field i.icon{
-    left: 0;
+.showHidePw {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+    font-size: 24px;
 }
 .input-field i.showHidePw{
-    right: 0;
-    cursor: pointer;
-    padding: 10px;
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
 }
-
-.form .text{
-    color: #333;
-    font-size: 14px;
-}
-
-.form a.text{
-    color: #4070f4;
-    text-decoration: none;
-}
-.form a:hover{
-    text-decoration: underline;
-}
-
-.form .button{
+.button {
     margin-top: 35px;
 }
 
-.form .button input{
+.button button {
+    width: 100%;
+    padding: 10px;
     border: none;
+    background-color: #4070f4;
     color: #fff;
     font-size: 17px;
     font-weight: 500;
-    letter-spacing: 1px;
     border-radius: 6px;
-    background-color: #4070f4;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.button input:hover{
+.button button:hover {
     background-color: #265df2;
 }
-
