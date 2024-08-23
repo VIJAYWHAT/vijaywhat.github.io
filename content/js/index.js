@@ -26,14 +26,13 @@ let usersData = [];
 async function getData() {
     const snapshot = await getDocs(collection(db, "profile"));
     snapshot.forEach((doc) => {
-        usersData.push(doc.data()); // Store user data in the array
+        usersData.push(doc.data());
     });
 }
 
 // Call the function to get data
 await getData();
 
-// Function to handle form submission
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -42,22 +41,19 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const errorMessage = document.getElementById('error-message');
     const loadingMessage = document.getElementById('loading-message');
 
-    // Show loading message
     loadingMessage.style.display = 'block';
     errorMessage.textContent = '';
 
-    // Validate user credentials
     const user = usersData.find(user => user.email === email && user.password === password);
 
-    // Hide loading message
     loadingMessage.style.display = 'none';
 
     if (user) {
         // Successful login
-        window.location.href = 'vj';
+        window.location.href = 'dashboard';
         
     } else {
-        // Show error message
+        // Show error message when user not found
         errorMessage.textContent = 'Invalid email or password';
     }
 });
