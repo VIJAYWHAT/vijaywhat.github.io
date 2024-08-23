@@ -44,13 +44,10 @@ function checkUserAuthentication() {
 checkUserAuthentication();
 
 setInterval(() => {
-    checkUserAuthentication();
-}, 900000); 
-
-setInterval(() => {
     signOut(auth).then(() => {
         console.log("User has been logged out due to inactivity");
+        alert("User has been logged out due to inactivity")
     }).catch((error) => {
         console.error("Error signing out:", error);
     });
-}, 900000); // 
+}, 30000);
