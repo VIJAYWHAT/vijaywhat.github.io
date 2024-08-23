@@ -70,6 +70,7 @@ main {
 .profile-container {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .profile-logo {
@@ -77,5 +78,4 @@ main {
     height: 45px;
     border-radius: 50%; 
     border: #f4f4f4 3px solid;
-
 }

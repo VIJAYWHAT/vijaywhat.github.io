@@ -55,13 +55,12 @@ async function getBlogData() {
     }
 }
 
-// Handle logout link click
-document.getElementById('logout-link').addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
+document.querySelector('.profile-container').addEventListener('click', (event) => {
+    event.preventDefault();
 
     signOut(auth).then(() => {
         localStorage.removeItem('lastLoginDate');
-        window.location.href = "login.html"; // Redirect to login page after logout
+        window.location.href = "login.html";
     }).catch((error) => {
         console.error("Error signing out:", error);
     });
