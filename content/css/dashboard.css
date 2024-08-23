@@ -33,16 +33,14 @@ blockquote {
     padding-left: 10px;
     color: #666;
 }
-/* General styles for the page */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Add padding to the top to prevent content from hiding under the fixed header */
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
-/* Header styles */
 .header {
     position: fixed;
     top: 0;
@@ -56,8 +54,7 @@ body {
     height: 65px;
     padding: 0 20px;
     z-index: 1000;
-    box-shadow: 4px 5px 8px 3px #c5c3c3;
-    
+    box-shadow: 4px 5px 8px 3px #c5c3c3;   
 }
 
 main {
@@ -76,7 +73,9 @@ main {
 }
 
 .profile-logo {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%; 
+    border: #f4f4f4 3px solid;
+
 }
