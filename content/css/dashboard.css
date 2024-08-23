@@ -51,7 +51,7 @@ body {
     align-items: center;
     background-color: #4070f4;
     color: white;
-    height: 65px;
+    height: 60px;
     padding: 0 20px;
     z-index: 1000;
     box-shadow: 4px 5px 8px 3px #c5c3c3;   
@@ -74,8 +74,8 @@ main {
 }
 
 .profile-logo {
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%; 
     border: #f4f4f4 3px solid;
 }
