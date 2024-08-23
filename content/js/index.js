@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -16,23 +16,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Firestore
-const db = getFirestore(app);
-
-// Store the data retrieved from Firestore
-let usersData = [];
-
-// Function to get data from Firestore
-async function getData() {
-    const snapshot = await getDocs(collection(db, "profile"));
-    snapshot.forEach((doc) => {
-        usersData.push(doc.data());
-    });
-}
-
-// Call the function to get data
-await getData();
-
+// Handle the login form submission
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -44,16 +28,16 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     loadingMessage.style.display = 'block';
     errorMessage.textContent = '';
 
-    const user = usersData.find(user => user.email === email && user.password === password);
-
-    loadingMessage.style.display = 'none';
-
-    if (user) {
-        // Successful login
+    const auth = getAuth();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
         window.location.href = 'dashboard';
-        
-    } else {
-        // Show error message when user not found
+      })
+      .catch((error) => {
+        console.log(error);
         errorMessage.textContent = 'Invalid email or password';
-    }
+      })
+      .finally(() => {
+        loadingMessage.style.display = 'none';
+      });
 });
