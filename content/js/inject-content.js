@@ -50,7 +50,6 @@ setInterval(() => {
 setInterval(() => {
     signOut(auth).then(() => {
         console.log("User has been logged out due to inactivity");
-        window.location.href = "login.html";
     }).catch((error) => {
         console.error("Error signing out:", error);
     });
