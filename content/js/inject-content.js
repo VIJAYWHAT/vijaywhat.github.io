@@ -7,13 +7,12 @@ const db = getFirestore(app);
 
 function checkDailyLogin() {
     const lastLoginDate = localStorage.getItem('lastLoginDate');
-    const today = new Date().toISOString().split('T')[0];
+    const today = new Date().toISOString().split('T')[0]; // Format as YYYY-MM-DD
 
     // If the last login date is not today, log out the user
     if (lastLoginDate !== today) {
         signOut(auth).then(() => {
             localStorage.removeItem('lastLoginDate');
-            alert("User has been logged out!")
             window.location.href = "login.html";
         }).catch((error) => {
             console.error("Error signing out:", error);
@@ -21,6 +20,7 @@ function checkDailyLogin() {
     }
 }
 
+// Call the checkDailyLogin function to verify if the user should be logged out
 checkDailyLogin();
 
 // Check if the user is authenticated
@@ -55,3 +55,13 @@ async function getBlogData() {
         return { title: "Title not found", content: "Content not found!" };
     }
 }
+
+// Handle the logout button click
+document.getElementById('logout-button')?.addEventListener('click', () => {
+    signOut(auth).then(() => {
+        localStorage.removeItem('lastLoginDate');
+        window.location.href = 'login.html';
+    }).catch((error) => {
+        console.error('Error signing out:', error);
+    });
+});
