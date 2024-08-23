@@ -20,7 +20,6 @@ function checkDailyLogin() {
     }
 }
 
-// Call the checkDailyLogin function to verify if the user should be logged out
 checkDailyLogin();
 
 // Check if the user is authenticated
@@ -56,12 +55,14 @@ async function getBlogData() {
     }
 }
 
-// Handle the logout button click
-document.getElementById('logout-button')?.addEventListener('click', () => {
+// Handle logout link click
+document.getElementById('logout-link').addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
+
     signOut(auth).then(() => {
         localStorage.removeItem('lastLoginDate');
-        window.location.href = 'login.html';
+        window.location.href = "login.html"; // Redirect to login page after logout
     }).catch((error) => {
-        console.error('Error signing out:', error);
+        console.error("Error signing out:", error);
     });
 });

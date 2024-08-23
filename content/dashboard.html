@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/md.css">
 </head>
 <body>
-
-    <div id="profile-section">
-        <img src="path/to/profile-picture.jpg" alt="Profile Picture">
-        <div id="profile-info">
-            <h2 id="profile-name">User Name</h2>
-            <button id="logout-button">Logout</button>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="header-title">Dashboard</h1>
+        <div class="profile-container">
+            <img src="https://avatars.githubusercontent.com/u/89501520?v=4" alt="Profile Logo" class="profile-logo">
         </div>
-    </div>
+    </header>
 
-    <h1 id="blog-title"></h1>
+    <!-- Main Content -->
+    <main>
+        <h2 id="blog-title"></h2>
+        <div id="blog-content">
+            Loading content...
+        </div>
+    </main>
 
-    <div id="blog-content">
-        Loading content...
-    </div>
     <script type="module" src="/js/inject-content.js"></script>
 </body>
 </html>
