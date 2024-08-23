@@ -1,5 +1,5 @@
-import app from './firebase-config.js';
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
+import app from './firebase-config.js';
 
 const auth = getAuth(app);
 
@@ -16,7 +16,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        window.location.href = 'dashboard';
+        const today = new Date().toISOString().split('T')[0];
+        localStorage.setItem('lastLoginDate', today);
+        window.location.href = 'dashboard.html';
       })
       .catch((error) => {
         console.log(error);
