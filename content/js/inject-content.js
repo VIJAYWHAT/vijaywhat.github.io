@@ -60,7 +60,7 @@ document.querySelector('.profile-container').addEventListener('click', (event) =
 
     signOut(auth).then(() => {
         localStorage.removeItem('lastLoginDate');
-        window.location.href = "login.html";
+        window.location.href = "https://vijaywhat.github.io/";
     }).catch((error) => {
         console.error("Error signing out:", error);
     });
