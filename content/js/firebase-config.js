@@ -1,6 +1,4 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -16,18 +14,4 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Firestore
-const db = getFirestore(app);
-
-export async function getBlogData() {
-  const docRef = doc(db, "blog-data", "sahag_speech");
-  const docSnap = await getDoc(docRef);
-
-  if (docSnap.exists()) {
-      console.log("Data from Firestore:", docSnap.data()); // Debugging line
-      return docSnap.data(); // Return the entire document data
-  } else {
-      console.error("No such document!");
-      return { title: "Title not found", content: "Content not found!" };
-  }
-}
+export default app;
