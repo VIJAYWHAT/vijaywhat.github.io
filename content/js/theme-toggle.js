@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 function updateIcon(theme) {
     const icon = document.querySelector('#theme-toggle i');
     if (theme === 'dark') {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
+        icon.classList.remove('fa-toggle-off');
+        icon.classList.add('fa-toggle-on');
     } else {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
+        icon.classList.remove('fa-toggle-on');
+        icon.classList.add('fa-toggle-off');
     }
 }
