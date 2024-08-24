@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.body.classList.toggle('dark-theme', currentTheme === 'dark');
 
-    updateIcon(currentTheme);
-
     themeToggleButton.addEventListener('click', () => {
         const newTheme = document.body.classList.contains('dark-theme') ? 'light' : 'dark';
 
@@ -13,17 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem('theme', newTheme);
 
-        updateIcon(newTheme);
     });
 });
 
-function updateIcon(theme) {
-    const icon = document.querySelector('#theme-toggle i');
-    if (theme === 'dark') {
-        icon.classList.remove('fa-toggle-off');
-        icon.classList.add('fa-toggle-on');
-    } else {
-        icon.classList.remove('fa-toggle-on');
-        icon.classList.add('fa-toggle-off');
-    }
-}
