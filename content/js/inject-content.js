@@ -5,29 +5,30 @@ import app from './firebase-config.js';
 const auth = getAuth(app);
 const db = getFirestore(app);
 
+function handleSignOut(redirectUrl) {
+    signOut(auth).then(() => {
+        localStorage.removeItem('lastLoginDate');
+        window.location.href = redirectUrl;
+    }).catch((error) => {
+        console.error("Error signing out:", error);
+    });
+}
+
 function checkDailyLogin() {
     const lastLoginDate = localStorage.getItem('lastLoginDate');
-    const today = new Date().toISOString().split('T')[0]; // Format as YYYY-MM-DD
+    const today = new Date().toISOString().split('T')[0];
 
-    // If the last login date is not today, log out the user
     if (lastLoginDate !== today) {
-        signOut(auth).then(() => {
-            localStorage.removeItem('lastLoginDate');
-            window.location.href = "login.html";
-        }).catch((error) => {
-            console.error("Error signing out:", error);
-        });
+        handleSignOut("login.html");
     }
 }
 
 checkDailyLogin();
 
-// Check if the user is authenticated
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         console.log("User is logged in");
 
-        // Load blog content if authenticated
         const titleElement = document.getElementById("blog-title");
         const contentElement = document.getElementById("blog-content");
 
@@ -57,11 +58,5 @@ async function getBlogData() {
 
 document.querySelector('.profile-container').addEventListener('click', (event) => {
     event.preventDefault();
-
-    signOut(auth).then(() => {
-        localStorage.removeItem('lastLoginDate');
-        window.location.href = "https://vijaywhat.github.io/";
-    }).catch((error) => {
-        console.error("Error signing out:", error);
-    });
+    handleSignOut("https://vijaywhat.github.io/");
 });
