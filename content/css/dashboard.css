@@ -80,7 +80,6 @@ main {
     border: #f4f4f4 3px solid;
 }
 
-
 .header-controls {
     display: flex;
     align-items: center;
@@ -104,9 +103,17 @@ body.dark-theme {
     color: #fff;
 }
 
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme h4, 
+body.dark-theme h5, 
+body.dark-theme h6 {
+    color: #fff;
+}
+
 body.dark-theme .header {
     background-color: rgb(33, 37, 41);
-
 }
 
 body.dark-theme .theme-toggle-button {
@@ -116,4 +123,10 @@ body.dark-theme .theme-toggle-button {
 
 body.dark-theme .theme-toggle-button:hover {
     background-color: #555;
+}
+
+body.dark-theme pre, 
+body.dark-theme code {
+    background-color: #444;
+    color: #fff;
 }
