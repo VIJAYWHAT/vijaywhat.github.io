@@ -3,7 +3,7 @@ title: Presentations
 date: 2020-01-07T16:47:30.077Z
 link: NA
 image: /img/three-states-of-data.png
-description: NA
+description: Three states of data
 weight: 10
 sitemap:
   priority: 0.6
