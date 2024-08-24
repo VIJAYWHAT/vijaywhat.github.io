@@ -9,7 +9,7 @@ enableGitInfo = false
 
 [params]
 address = "Coimbatore, India"
-favicon = "/favicon.png"
+favicon = "https://raw.githubusercontent.com/VIJAYWHAT/vijaywhat.github.io/main/static/vj.webp"
 firstName = "Vijay"
 lastName = "Raja"
 phone = "1-555"
