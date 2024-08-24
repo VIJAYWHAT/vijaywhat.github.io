@@ -58,29 +58,3 @@ document.querySelector('.profile-container').addEventListener('click', (event) =
     handleSignOut("https://vijaywhat.github.io/");
 });
 
-
-onAuthStateChanged(auth, async (user) => {
-    if (user) {
-        console.log("User is logged in");
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const docId = urlParams.get('docId');
-
-        if (docId) {
-            const docRef = doc(db, "blog-data", docId);
-            const docSnap = await getDoc(docRef);
-
-            if (docSnap.exists()) {
-                document.getElementById('blog-title').textContent = docSnap.data().title;
-                document.getElementById('blog-content').innerHTML = docSnap.data().content;
-                
-            } else {
-                document.getElementById('blog-title').textContent = "Title not found";
-                document.getElementById('blog-content').textContent = "Content not found!";
-            }
-        }
-    } else {
-        console.log("User is not logged in, redirecting to login page");
-        window.location.href = "login.html";
-    }
-});
