@@ -1,5 +1,5 @@
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
-import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 import app from './firebase-config.js';
 
 const auth = getAuth(app);
@@ -28,32 +28,29 @@ checkDailyLogin();
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         console.log("User is logged in");
-
-        const titleElement = document.getElementById("blog-title");
-        const contentElement = document.getElementById("blog-content");
-
-        if (titleElement && contentElement) {
-            const blogData = await getBlogData();
-            titleElement.innerHTML = blogData.title;
-            contentElement.innerHTML = blogData.content;
-        }
+        displayBlogTitles();
     } else {
         console.log("User is not logged in, redirecting to login page");
         window.location.href = "login.html";
     }
 });
 
-async function getBlogData() {
-    const docRef = doc(db, "blog-data", "sahag_speech");
-    const docSnap = await getDoc(docRef);
+async function displayBlogTitles() {
+    const blogCollection = collection(db, "blog-data");
+    const blogSnapshot = await getDocs(blogCollection);
+    const blogListElement = document.getElementById("blog-list");
 
-    if (docSnap.exists()) {
-        console.log("Data from Firestore:", docSnap.data());
-        return docSnap.data();
-    } else {
-        console.error("No such document!");
-        return { title: "Title not found", content: "Content not found!" };
-    }
+    blogListElement.innerHTML = '';
+
+    blogSnapshot.forEach(doc => {
+        const data = doc.data();
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = `detail.html?docId=${doc.id}`;
+        link.textContent = data.title;
+        listItem.appendChild(link);
+        blogListElement.appendChild(listItem);
+    });
 }
 
 document.querySelector('.profile-container').addEventListener('click', (event) => {

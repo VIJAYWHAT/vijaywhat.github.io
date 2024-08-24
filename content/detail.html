@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Blog Details</title>
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/VIJAYWHAT/vijaywhat.github.io/main/static/favicon.png">
@@ -11,7 +11,7 @@
 <body>
 
     <header class="header">
-        <h1 class="header-title">Dashboard</h1>
+        <h1 class="header-title">Blog Details</h1>
         <div class="header-controls">
             <button id="theme-toggle" class="theme-toggle-button">
                 <i class="fas fa-lightbulb"></i>
@@ -22,15 +22,14 @@
         </div>
     </header>
 
-
     <main>
-        <ul id="blog-list">
-            <li>Loading...</li>
-        </ul>
+        <h2 id="blog-title"></h2>
+        <div id="blog-content">
+            Loading content...
+        </div>
     </main>
-    
 
-    <script type="module" src="/js/inject-content.js"></script>
+    <script type="module" src="/js/detail.js"></script>
     <script src="/js/theme-toggle.js"></script>
 </body>
 </html>
