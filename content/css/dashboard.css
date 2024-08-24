@@ -87,15 +87,19 @@ main {
 }
 
 .theme-toggle-button {
-    padding: 5px 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .theme-toggle-button:hover {
-    background-color: #f0f0f0;
+    color: #fff;
 }
 
 body.dark-theme {
@@ -117,14 +121,12 @@ body.dark-theme .header {
 }
 
 body.dark-theme .theme-toggle-button {
-    background-color: #666;
     color: #fff;
 }
 
 body.dark-theme .theme-toggle-button:hover {
-    background-color: #555;
+    color: #555;
 }
-
 body.dark-theme pre, 
 body.dark-theme code {
     background-color: #444;
