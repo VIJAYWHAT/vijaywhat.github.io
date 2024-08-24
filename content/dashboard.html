@@ -10,10 +10,14 @@
 
     <header class="header">
         <h1 class="header-title">Dashboard</h1>
-        <div class="profile-container" >
-            <img src="https://avatars.githubusercontent.com/u/89501520?v=4" alt="Profile Logo" class="profile-logo">
+        <div class="header-controls">
+            <button id="theme-toggle" class="theme-toggle-button">Switch Theme</button>
+            <div class="profile-container">
+                <img src="https://avatars.githubusercontent.com/u/89501520?v=4" alt="Profile Logo" class="profile-logo">
+            </div>
         </div>
     </header>
+
 
     <main>
         <h2 id="blog-title"></h2>
@@ -23,5 +27,6 @@
     </main>
 
     <script type="module" src="/js/inject-content.js"></script>
+    <script src="/js/theme-toggle.js"></script>
 </body>
 </html>
