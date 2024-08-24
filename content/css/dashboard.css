@@ -91,15 +91,18 @@ main {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: #333;
+    color: #fff;
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 0 6px rgba(102, 101, 101, 0.8);
 }
 
 .theme-toggle-button:hover {
-    color: #fff;
+    color: #333;
+    text-shadow: 0 0 12px #fff;
 }
 
 body.dark-theme {
@@ -120,12 +123,15 @@ body.dark-theme .header {
     background-color: rgb(33, 37, 41);
 }
 
+
 body.dark-theme .theme-toggle-button {
-    color: #fff;
+    color: #333;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 body.dark-theme .theme-toggle-button:hover {
-    color: #555;
+    color: #fff;
+    text-shadow: 0 0 12px rgba(255, 221, 87, 0.8);
 }
 body.dark-theme pre, 
 body.dark-theme code {
