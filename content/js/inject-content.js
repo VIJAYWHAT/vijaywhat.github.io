@@ -49,9 +49,14 @@ async function displayBlogTitles() {
         link.href = `detail.html?docId=${doc.id}`;
         link.textContent = data.title;
         listItem.appendChild(link);
+        listItem.onclick = () => {
+            window.location.href = link.href;
+        };
+        
         blogListElement.appendChild(listItem);
     });
 }
+
 
 document.querySelector('.profile-container').addEventListener('click', (event) => {
     event.preventDefault();
