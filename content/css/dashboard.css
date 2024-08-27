@@ -6,6 +6,38 @@ body {
     padding-top: 40px;
 }
 
+/* Markdown Style */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin: 1.5em 0 1em;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+}
+
+blockquote {
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+    color: #666;
+}
+
 /* Header style */
 
 .header {
@@ -49,6 +81,7 @@ body {
     gap: 10px;
 }
 
+/* Main (Dashboard Style) */
 main {
     padding: 20px;
     background-color: #f4f4f4;
@@ -113,6 +146,8 @@ main {
     color: #333;
     text-shadow: 0 0 12px #fff;
 }
+
+/* Dark Theme */
 
 body.dark-theme {
     background-color: #333;
