@@ -1,45 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #333;
-    margin: 1.5em 0 1em;
-    line-height: 1.2;
-}
-
-p {
-    margin-bottom: 1em;
-}
-
-pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border: 1px solid #ddd;
-    overflow-x: auto;
-}
-
-code {
-    background-color: #f4f4f4;
-    padding: 2px 4px;
-    font-size: 90%;
-    border-radius: 4px;
-}
-
-blockquote {
-    border-left: 5px solid #ccc;
-    padding-left: 10px;
-    color: #666;
-}
-
-body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 40px;
 }
+
+/* Header style */
 
 .header {
     position: fixed;
@@ -57,9 +24,6 @@ body {
     box-shadow: 4px 5px 8px 3px #c5c3c3;   
 }
 
-main {
-    padding: 20px;
-}
 
 .header-title {
     margin: 0;
@@ -85,6 +49,13 @@ main {
     align-items: center;
     gap: 10px;
 }
+
+main {
+    padding: 20px;
+}
+
+
+/* Theme style */
 
 .theme-toggle-button {
     padding: 10px;
@@ -137,4 +108,47 @@ body.dark-theme pre,
 body.dark-theme code {
     background-color: #444;
     color: #fff;
+}
+
+
+/* Body (Blog Title) */
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#blog-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#blog-list li {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#blog-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#blog-list li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#blog-list li a:hover {
+    color: #007bff;
+}
+
+#blog-list li:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
