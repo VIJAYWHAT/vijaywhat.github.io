@@ -28,3 +28,25 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         loadingMessage.style.display = 'none';
       });
 });
+
+const pwShowHide = document.querySelectorAll(".showHidePw"),
+      pwField = document.querySelector("#password");
+
+// JS code to show/hide password and change icon
+pwShowHide.forEach(eyeIcon => {
+    eyeIcon.addEventListener("click", () => {
+        if (pwField.type === "password") {
+            pwField.type = "text";
+
+            pwShowHide.forEach(icon => {
+                icon.classList.replace("uil-eye-slash", "uil-eye");
+            });
+        } else {
+            pwField.type = "password";
+
+            pwShowHide.forEach(icon => {
+                icon.classList.replace("uil-eye", "uil-eye-slash");
+            });
+        }
+    });
+});
