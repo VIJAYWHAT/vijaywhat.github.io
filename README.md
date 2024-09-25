@@ -1,4 +1,4 @@
-# vijaywhat.github.io
+# vijayraja.github.io
 
 ## Setup
 
