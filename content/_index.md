@@ -11,4 +11,3 @@ outputs:
 ---
 
 Self Learning Software Engineer and Open source contriputor, passionate about technology and programming languages with a focus on C, Java and Python, also specialized in R&D and POC. 
-
