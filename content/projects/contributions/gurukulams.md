@@ -1,7 +1,7 @@
 ---
 title: "Gurukulams"
 link: "https://github.com/gurukulams/gurukulam"
-image: "https://raw.githubusercontent.com/VIJAYWHAT/vijaywhat.github.io/refs/heads/main/static/img/Gurukulams%20logo.png"
+image: "https://raw.githubusercontent.com/VIJAYWHAT/vijaywhat.github.io/refs/heads/main/static/img/gurukulams-logo.png"
 description: "An open-source initiative dedicated to transforming traditional textbooks into digitalized books."
 featured: true
 tags: ["Markdown", "Katex", "Git", "VScode", "Hugo"]
