@@ -5,7 +5,7 @@ pubtype: "Presentations"
 featured: true
 description: "This presentation covers maintaining an up-to-date codebase by using Maven Versions and Enforcer plugins to proactively manage dependencies and minimize technical debt. It addresses deprecated APIs, enforces CI/CD standards, and overcomes business objections to updates, ensuring a secure and beginner-friendly development environment with minimal upgrade costs."
 tags: ["CI/CD","Java","Checkstyle","ArchUnit","Jacoco","MavenPlugins","Version","Gurukulam"]
-image: "/img/thumbnail Beyond CI_CD.png"
+image: "/img/Beyond CI_CD.png"
 link: "https://techatpark.com/posts/beyond-ci-cd/"
 fact: "Interesting little tidbit shown below image on summary and detail page"
 weight: 410
