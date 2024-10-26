@@ -1,6 +1,6 @@
 ---
 title: "Exploring the Next Frontier : Beyond CI/CD"
-date: 2023-01-21
+date: 2024-10-10
 pubtype: "Presentations"
 featured: true
 description: "This presentation covers maintaining an up-to-date codebase by using Maven Versions and Enforcer plugins to proactively manage dependencies and minimize technical debt. It addresses deprecated APIs, enforces CI/CD standards, and overcomes business objections to updates, ensuring a secure and beginner-friendly development environment with minimal upgrade costs."
