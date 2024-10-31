@@ -223,12 +223,12 @@ Phone: 73394800000
 Date    	Description	   Transaction Type   Amount (Rs)   Balance (Rs)
 ---------------------------------------------------------------------------------
 06-07-2024	Initial Deposit	    Credit		10000  	    10000
-06-07-2024	Withdrawal	    Debit		500  	    9500
-06-07-2024	Deposit		    Credit		1000  	    10500
-07-07-2024	Deposit		    Credit		1500  	    12000
-08-07-2024	Deposit		    Credit		1300  	    13300
-08-07-2024	Deposit		    Credit		1500  	    14800
-08-07-2024	Withdrawal	    Debit		1000  	    13800
+06-07-2024	Withdrawal	        Debit		500  	    9500
+06-07-2024	Deposit		        Credit		1000  	    10500
+07-07-2024	Deposit		        Credit		1500  	    12000
+08-07-2024	Deposit		        Credit		1300  	    13300
+08-07-2024	Deposit		        Credit		1500  	    14800
+08-07-2024	Withdrawal	        Debit		1000  	    13800
 ```
 
 ## Conclusion
