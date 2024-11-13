@@ -235,6 +235,14 @@ Date    	Description	   Transaction Type   Amount (Rs)   Balance (Rs)
 This banking application project showcases a practical implementation of various C programming concepts, making it a valuable addition to any beginner's portfolio. The code is designed to be modular, easy to understand, and demonstrates real-time use cases that are commonly encountered in software development.
 
 ### Notes
-> This overview provides a brief explanation of the project. For the complete code and detailed explanations, please visit my [GitHub repository](https://github.com/VIJAYWHAT/C-programs). The full code is well-commented to aid your understanding. If you have any questions or need further clarification, feel free to create an issue in the GitHub repository. I will be happy to assist you.
+> This overview provides a brief explanation of the project. Initially developed in C, I've now also implemented the same comprehensive banking application in Java, covering both beginner and advanced concepts. The Java version incorporates similar functionality but with an object-oriented approach, enhancing modularity and reusability.
+
+> For the complete code and detailed explanations, please visit my GitHub repositories:
+> - [C Version of Banking Application](https://github.com/VIJAYWHAT/C-programs/tree/main/Banking_Program_C)
+> - [Java Version of Banking Application](https://github.com/VIJAYWHAT/java-programs/tree/main/banking)
+
+> Both versions are well-commented to aid your understanding. If you have any questions or need further clarification, feel free to create an issue in either repository, and I will be happy to assist you.
+
+
 
 
