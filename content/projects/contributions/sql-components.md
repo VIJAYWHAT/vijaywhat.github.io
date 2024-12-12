@@ -46,6 +46,5 @@ As a contributor to SQL Components, I played a vital role in its development and
 This project provided invaluable experience in API design, FreeMarker templates, debugging, and Java-based SQL frameworks. My contributions directly improved SQL Components' functionality and developer experience.
 
 ### Explore More  
-- [Visit SQL Components](https://sqlcomponents.org)  
 - [GitHub Repository for SQL Components](https://github.com/sqlcomponents/sqlcomponents)  
 - [My Issues and Contributions](https://github.com/sqlcomponents/sqlcomponents/issues)  
