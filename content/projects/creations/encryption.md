@@ -4,7 +4,7 @@
   "image": "/img/data-encryption.png",
   "link": "https://github.com/VIJAYWHAT/Encryption-Decryption-Project",
   "description": "A practical JavaScript project to encrypt and decrypt text using AES encryption, focusing on user-friendly UI/UX and secure data handling. Dive into modern encryption techniques and explore a step-by-step guide to building this project.",
-  "tags": ["JavaScript", "AES Encryption", "Frontend Projects", "Data Security", "UI/UX Design"],
+  "tags": ["JavaScript", "AES Encryption", "Data Security", "Cryptography", "Frontend Projects"],
   "fact": "",
   "featured": true
 }
