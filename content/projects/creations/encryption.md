@@ -12,3 +12,12 @@
 ## Overview
 
 This project showcases a JavaScript-based encryption and decryption application utilizing AES (Advanced Encryption Standard) encryption via the CryptoJS library. With an intuitive UI, users can easily encrypt text using a secret key and decrypt it when needed. It serves as an excellent learning resource for frontend enthusiasts interested in implementing secure data handling.
+
+
+## Key Features
+- **AES Encryption and Decryption**: Securely encrypt and decrypt data using a symmetric key.
+- **User-Friendly UI**: Simplified interface for easy text input, encryption, and decryption.
+- **Clipboard Integration**: Copy encrypted or decrypted text with a single click.
+- **Real-time Feedback**: Snackbars display messages for successful copy actions or errors.
+- **Password Visibility Toggle**: Easily switch between hidden and visible states for the secret key.
+
