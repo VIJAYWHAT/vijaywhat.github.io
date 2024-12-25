@@ -21,3 +21,59 @@ This project showcases a JavaScript-based encryption and decryption application 
 - **Real-time Feedback**: Snackbars display messages for successful copy actions or errors.
 - **Password Visibility Toggle**: Easily switch between hidden and visible states for the secret key.
 
+
+## Code Structure
+The project includes the following key components:
+
+### HTML Structure
+The HTML file defines the layout, including a form for input, output sections, and buttons for user interaction.
+
+```html
+<div class="textBox">
+    <input type="password" id="secretKey" placeholder="Enter secret key" autocomplete="off">
+    <span id="toggleSecretKey">🙈</span>
+</div>
+```
+
+- **Input Fields**: For plaintext and secret key entry.
+- **Action Buttons**: Encrypt, decrypt, and copy buttons for seamless interactions.
+
+### JavaScript Functionality
+The JavaScript (`script.js`) file implements the core encryption and decryption logic using the CryptoJS library.
+
+#### Encrypting Text
+```javascript
+function encryptText() {
+    const plainText = document.getElementById('plainText').value;
+    const secretKey = document.getElementById('secretKey').value;
+
+    if (!plainText || !secretKey) {
+        alert('Please provide both plain text and secret key.');
+        return;
+    }
+
+    const encrypted = CryptoJS.AES.encrypt(plainText, secretKey).toString();
+    document.getElementById('encryptedText').value = encrypted;
+}
+```
+
+#### Decrypting Text
+```javascript
+function decryptText() {
+    const encryptedText = document.getElementById('encryptedTextInput').value;
+    const secretKey = document.getElementById('secretKey').value;
+
+    if (!encryptedText || !secretKey) {
+        alert('Please provide both encrypted text and secret key.');
+        return;
+    }
+
+    try {
+        const decrypted = CryptoJS.AES.decrypt(encryptedText, secretKey).toString(CryptoJS.enc.Utf8);
+        if (!decrypted) throw new Error();
+        document.getElementById('decryptedText').value = decrypted;
+    } catch {
+        alert('Decryption failed. Please check the secret key and encrypted text.');
+    }
+}
+```
