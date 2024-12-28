@@ -63,3 +63,20 @@ document.querySelector('.profile-container').addEventListener('click', (event) =
     handleSignOut("https://vijaywhat.github.io/");
 });
 
+
+function pasteText() {
+
+    document.getElementById("pasteArea").focus(); // Focus on the textarea
+  
+    navigator.clipboard.readText()
+  
+      .then(text => {
+  
+        document.execCommand('paste'); // Paste the clipboard content
+  
+      })
+  
+      .catch(err => console.error('Failed to paste:', err));
+  
+  }
+  
