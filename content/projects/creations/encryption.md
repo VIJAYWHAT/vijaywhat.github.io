@@ -21,7 +21,6 @@ This project showcases a JavaScript-based encryption and decryption application 
 - **Real-time Feedback**: Snackbars display messages for successful copy actions or errors.
 - **Password Visibility Toggle**: Easily switch between hidden and visible states for the secret key.
 
-
 ## Code Structure
 The project includes the following key components:
 
@@ -77,3 +76,26 @@ function decryptText() {
     }
 }
 ```
+
+#### Additional Features
+- **Password Toggle**: Switches the secret key field between visible and hidden states.
+- **Copy to Clipboard**: Copies text to the clipboard using the `navigator.clipboard` API.
+- **Snackbar Notifications**: Provides real-time feedback on user actions.
+
+### CSS Styling
+The `styles.css` file ensures a clean, responsive design for optimal user experience. It includes styles for:
+- Input fields and buttons.
+- Snackbar notifications.
+- Responsive layout for mobile and desktop.
+
+## Learning Outcomes
+By working through this project, you will:
+- Understand how AES encryption works and its applications.
+- Learn to integrate third-party libraries like CryptoJS into a project.
+- Enhance your skills in frontend development, including UI/UX design.
+- Explore clipboard interaction and real-time feedback mechanisms.
+
+## Conclusion
+This project highlights the practical use of AES encryption in securing data, coupled with an interactive and user-friendly interface. Whether you're a beginner or an experienced developer, building this project is a great way to delve into secure JavaScript programming.
+
+🔗 **Repository Link**: [GitHub Repository](https://github.com/VIJAYWHAT/encrypt)
