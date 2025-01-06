@@ -98,3 +98,5 @@ By working through this project, you will:
 ## Conclusion
 This project highlights the practical use of AES encryption in securing data, coupled with an interactive and user-friendly interface. Whether you're a beginner or an experienced developer, building this project is a great way to delve into secure JavaScript programming.
 
+✅ **Note:** This project includes valid, well-documented comments within the code for better understanding.
+
