@@ -2,7 +2,7 @@
   "title": "Secure Your Data: AES Encryption and Decryption in JavaScript",
   "date": "2025-01-09T10:00:00+05:30",
   "image": "/img/data-encryption.png",
-  "link": "https://github.com/VIJAYWHAT/encrypt",
+  "link": "https://vijaywhat.github.io/encrypt/",
   "description": "A practical JavaScript project to encrypt and decrypt text using AES encryption, focusing on user-friendly UI/UX and secure data handling. Dive into modern encryption techniques and explore a step-by-step guide to building this project.",
   "tags": ["JavaScript", "AES Encryption", "Data Security", "Cryptography", "Frontend Projects"],
   "fact": "",
@@ -100,3 +100,4 @@ This project highlights the practical use of AES encryption in securing data, co
 
 ✅ **Note:** This project includes valid, well-documented comments within the code for better understanding.
 
+🔗 **Repository Link**: [GitHub Repository](https://github.com/VIJAYWHAT/encrypt)
