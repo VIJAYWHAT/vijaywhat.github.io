@@ -205,64 +205,72 @@ body.dark-theme code {
   color: #fff;
 }
 
-/* Sidebar Styles */
-.sidebar {
-  position: fixed;
-  right: -250px;
-  top: 0;
-  height: 100vh;
-  padding-top: 80px;
-  width: 250px;
-  background: rgb(64, 112, 244, 0.9);
-  transition: 0.4s;
-  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
-}
+    /* Sidebar Styles */
+    .sidebar {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    height: 100vh;
+    padding-top: 80px;
+    width: 250px;
+    background: rgb(64, 112, 244, 0.9);
+    transition: 0.4s;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    }
 
-.sidebar.active {
-  right: 0; /* Show sidebar */
-}
+    .sidebar.active {
+    right: 0; /* Show sidebar */
+    
+    }
 
-.sidebar-close {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
+    .sidebar-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    }
 
-.sidebar-menu {
-  margin: 0;
-  list-style: none;
-  padding: 0px 20px;
-}
+    .sidebar-menu {
+    margin: 0;
+    list-style: none;
+    padding: 0px 20px;
+    gap: 0;
+    
+    }
 
-.sidebar-menu li {
-  margin-bottom: 15px;
-}
+    .sidebar-menu li {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 0;
+    }
 
-.sidebar-menu li a {
-  display: block;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  padding: 10px;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  transition: 0.3s;
-}
+    .sidebar-menu li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    gap: 0;
+    }
 
-.sidebar-menu li a i {
-  margin-right: 10px;
-  font-size: 18px;
-}
+    .sidebar-menu li a i {
+    margin-right: 10px;
+    font-size: 18px;
+    gap: 0;
+    }
 
-.sidebar-menu li a:hover {
-  color: #000000;
-  border-radius: 5px;
-}
+    .sidebar-menu li a:hover {
+    color: #000000;
+    border-radius: 5px;
+    }
+
 
 /* Dark Theme Sidebar Styles */
 body.dark-theme .sidebar {
@@ -279,4 +287,22 @@ body.dark-theme .sidebar-menu li a:hover {
 
 body.dark-theme .sidebar-close {
   color: #fff;
+}
+
+.sidebar-menu li a.github-icon {
+    font-size: 18px;
+}
+
+.sidebar-menu li a.github-icon:hover {
+    color: #007bff; /* Hover color for GitHub icon */
+}
+
+.icon-link {
+    margin-left: 10px; /* Adds spacing between Profile text and GitHub icon */
+    color: white; /* Keeps it consistent */
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #ffc107; /* Highlight effect */
 }
