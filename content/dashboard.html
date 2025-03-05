@@ -16,20 +16,52 @@
             <button id="theme-toggle" class="theme-toggle-button">
                 <i class="fas fa-lightbulb"></i>
             </button>
-            <div class="profile-container">
+            <!-- Sidebar Toggle Icon -->
+            
+            <div class="profile-container" id="profile-container">
                 <img src="https://avatars.githubusercontent.com/u/89501520?v=4" alt="Profile Logo" class="profile-logo">
             </div>
+            <button id="sidebar-toggle" class="theme-toggle-button">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="sidebar-close" id="sidebar-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-menu">
+            <li><a href="#"><i class=""></i>Home</a></li>
+            <li><a href="#"><i class=""></i>Profile</a></li>
+            <li><a href="#"><i class=""></i>Settings</a></li>
+            <li><a href="#"><i class=""></i> Messages</a></li>
+            <li><a href="https://vijaywhat.github.io/"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
 
     <main>
         <ul id="blog-list">
             <li>Loading...</li>
         </ul>
-        
     </main>
 
     <script type="module" src="/js/inject-content.js"></script>
     <script src="/js/theme-toggle.js"></script>
+    <script>
+        // Sidebar toggle logic
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarClose = document.getElementById('sidebar-close');
+
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        sidebarClose.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
 </body>
 </html>
