@@ -10,4 +10,4 @@ outputs:
 - json
 ---
 
-Open source contriputor and Full-stack developer, passionate about technology and programming languages with a focus on C, Java and Python specialized in R&D and POC.
+Open source contributor and Full-stack developer, passionate about technology and programming languages with a focus on C, Java and Python specialized in R&D and POC.
