@@ -14,9 +14,6 @@ sitemap:
 
 A journey from zero to winning - In this blog, I take you through my unforgettable experience participating in my very first hackathon — from forming a team with friends, building “SpeakEase” from scratch in just 24 hours, surviving a sleepless night, to finally securing 3rd prize among tough competition. I share the raw moments, the tough decisions, the lessons we learned the hard way, and tips that can truly help first-time hackers. Whether you're nervous about joining a hackathon or just curious about how it all works — this story is for you. Let this journey inspire you to take that first step! 
 
-
-## **My First Hackathon Experience and How We Won in Our First 24-Hour Hackathon**
-
 ### **The Beginning: Entering the Hackathon**
 
 On **March 28-29, 2025**, I participated in **Hack Appsters'25**, a **24-hour hackathon** organized by the **Department of Computer Applications** at **Sri Ramakrishna College of Arts & Science, Coimbatore**, in association with **LST EduTech**. This was my **first-ever hackathon**, and I was both excited and nervous.
