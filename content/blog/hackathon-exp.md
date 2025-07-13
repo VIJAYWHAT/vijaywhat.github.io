@@ -1,19 +1,18 @@
 ---
 title: "My First Hackathon Experience : How We Won in Our First 24-Hour Hackathon"
-date: 2024-03-28
+date: 2025-03-28
 pubtype: "Blog"
-featured: true
+featured: false
 description: "A journey from zero to winning — In this blog, I share my thrilling first hackathon experience, how our team built “SpeakEase” in 24 hours, the mistakes we made, lessons learned, and how we ended up winning 3rd prize. Perfect read for first-time hackers looking for real insights and motivation!"
-tags: ["HackathonJourney","SpeakEase","TechSpartans","FirstHackathon","FromLearnerToMentor","FlaskDev", "GrowthMindset"]
+tags: ["HackathonJourney","SpeakEase","TechSpartans","FirstHackathon","FromLearnerToMentor","GrowthMindset"]
 link: "https://github.com/VIJAYWHAT/speak-ease"
 fact: ""
-weight: 400
+weight: 2
 sitemap:
-  priority : 0.7
+  priority : 0.8
 ---
 
-A journey from zero to winning — In this blog, I share my thrilling first hackathon experience, how our team built “SpeakEase” in 24 hours, the mistakes we made, lessons learned, and how we ended up winning 3rd prize. Perfect read for first-time hackers looking for real insights and motivation!
-
+A journey from zero to winning - In this blog, I take you through my unforgettable experience participating in my very first hackathon — from forming a team with friends, building “SpeakEase” from scratch in just 24 hours, surviving a sleepless night, to finally securing 3rd prize among tough competition. I share the raw moments, the tough decisions, the lessons we learned the hard way, and tips that can truly help first-time hackers. Whether you're nervous about joining a hackathon or just curious about how it all works — this story is for you. Let this journey inspire you to take that first step! 
 
 
 ## **My First Hackathon Experience and How We Won in Our First 24-Hour Hackathon**
