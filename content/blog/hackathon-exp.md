@@ -7,14 +7,18 @@ description: "A journey from zero to winning — In this blog, I share my thrill
 tags: ["HackathonJourney","SpeakEase","TechSpartans","FirstHackathon","FromLearnerToMentor","FlaskDev", "GrowthMindset"]
 link: "https://github.com/VIJAYWHAT/speak-ease"
 fact: ""
-weight: 300
+weight: 400
 sitemap:
-  priority : 0.8
+  priority : 0.7
 ---
 
-# **My First Hackathon Experience and How We Won in Our First 24-Hour Hackathon**
+A journey from zero to winning — In this blog, I share my thrilling first hackathon experience, how our team built “SpeakEase” in 24 hours, the mistakes we made, lessons learned, and how we ended up winning 3rd prize. Perfect read for first-time hackers looking for real insights and motivation!
 
-## **The Beginning: Entering the Hackathon**
+
+
+## **My First Hackathon Experience and How We Won in Our First 24-Hour Hackathon**
+
+### **The Beginning: Entering the Hackathon**
 
 On **March 28-29, 2025**, I participated in **Hack Appsters'25**, a **24-hour hackathon** organized by the **Department of Computer Applications** at **Sri Ramakrishna College of Arts & Science, Coimbatore**, in association with **LST EduTech**. This was my **first-ever hackathon**, and I was both excited and nervous.
 
