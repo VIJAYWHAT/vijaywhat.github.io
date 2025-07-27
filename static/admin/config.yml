@@ -10,7 +10,7 @@
 
 backend:
   name: github
-  repo: techatpark/my-resume
+  repo: VIJAYWHAT/my-resume
   branch: cms
 
 media_folder: "exampleSite/static/img" # Folder where user uploaded files should go
