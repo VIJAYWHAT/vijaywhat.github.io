@@ -8,7 +8,8 @@
       "skills":[
         {"name":"Microsoft SQL Server","icon":"msql_server"},
         {"name":"My SQL","icon":"database"},
-        {"name": "PostgreSQL"}
+        {"name": "PostgreSQL"},
+        {"name": "firebase"}
       ]
   },
   {
@@ -26,7 +27,8 @@
         {"name":"bash"},
         {"name":"Joget"},
         {"name":"Markdown"},
-        {"name":"Katex"}]
+        {"name":"Katex"}
+      ]
 },
 {
   "grouping":"UI/UX",
