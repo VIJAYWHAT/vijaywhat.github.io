@@ -1,79 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/VIJAYWHAT/vijaywhat.github.io/main/static/favicon.png">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://raw.githubusercontent.com/VIJAYWHAT/vijaywhat.github.io/main/static/favicon.png"
+    />
+  </head>
+  <body>
     <header class="header">
-        <h1 class="header-title">Dashboard</h1>
-        <div class="header-controls">
-            <button id="theme-toggle" class="theme-toggle-button">
-                <i class="fas fa-lightbulb"></i>
-            </button>
-            <!-- Sidebar Toggle Icon -->
-            
-            <div class="profile-container" id="profile-container">
-                <img src="https://avatars.githubusercontent.com/u/89501520?v=4" alt="Profile Logo" class="profile-logo">
-            </div>
-            <button id="sidebar-toggle" class="theme-toggle-button">
-                <i class="fas fa-bars"></i>
-            </button>
+      <h1 class="header-title">Dashboard</h1>
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-button">
+          <i class="fas fa-lightbulb"></i>
+        </button>
+        <!-- Sidebar Toggle Icon -->
+
+        <div class="profile-container" id="profile-container">
+          <img
+            src="https://avatars.githubusercontent.com/u/89501520?v=4"
+            alt="Profile Logo"
+            class="profile-logo"
+          />
         </div>
+        <button id="sidebar-toggle" class="theme-toggle-button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </header>
 
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
-        <button class="sidebar-close" id="sidebar-close">
-            <i class="fas fa-times"></i>
-        </button>
-        <ul class="sidebar-menu">
-            <li>
-                <a href="https://vijaywhat.github.io/portfolio/" target="_blank"> Profile</a>
-                <a href="https://github.com/vijaywhat/portfolio/" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
-            </li>
-            <li>
-                <a href="https://vijaywhat.github.io/encrypt/" target="_blank"> Encrypt</a>
-                <a href="https://github.com/VIJAYWHAT/encrypt/" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
-            </li>
-            <li>
-                <a href="https://vijaywhat.github.io/calc/" target="_blank"> % Calculator</a>
-                <a href="https://github.com/VIJAYWHAT/calc" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
-            </li>
-            <li>
-                <a href="https://vijaywhat.github.io/calc/pip-calculator.html" target="_blank"> PIP Calculator</a>
-                <a href="https://github.com/VIJAYWHAT/calc" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
-            </li>
-            <li><a href="https://vijaywhat.github.io/"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-        </ul>
+      <button class="sidebar-close" id="sidebar-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="https://vijaywhat.github.io/portfolio/" target="_blank">
+            Profile</a
+          >
+          <a
+            href="https://github.com/vijaywhat/portfolio/"
+            target="_blank"
+            class="icon-link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://vijaywhat.github.io/encrypt/" target="_blank">
+            Encrypt</a
+          >
+          <a
+            href="https://github.com/VIJAYWHAT/encrypt/"
+            target="_blank"
+            class="icon-link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://vijaywhat.github.io/calc/" target="_blank">
+            % Calculator</a
+          >
+          <a
+            href="https://github.com/VIJAYWHAT/calc"
+            target="_blank"
+            class="icon-link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://vijaywhat.github.io/calc/pip-calculator.html"
+            target="_blank"
+          >
+            PIP Calculator</a
+          >
+          <a
+            href="https://github.com/VIJAYWHAT/calc"
+            target="_blank"
+            class="icon-link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://vijaywhat.github.io/"
+            ><i class="fas fa-sign-out-alt"></i> Logout</a
+          >
+        </li>
+      </ul>
     </div>
 
     <main>
-        <ul id="blog-list">
-            <li>Loading...</li>
-        </ul>
+      <ul id="blog-list">
+        <li>Loading...</li>
+      </ul>
     </main>
 
     <script type="module" src="/js/inject-content.js"></script>
     <script src="/js/theme-toggle.js"></script>
     <script>
-        // Sidebar toggle logic
-        const sidebarToggle = document.getElementById('sidebar-toggle');
-        const sidebar = document.getElementById('sidebar');
-        const sidebarClose = document.getElementById('sidebar-close');
+      // Sidebar toggle logic
+      const sidebarToggle = document.getElementById("sidebar-toggle");
+      const sidebar = document.getElementById("sidebar");
+      const sidebarClose = document.getElementById("sidebar-close");
 
-        sidebarToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('active');
-        });
+      sidebarToggle.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
 
-        sidebarClose.addEventListener('click', () => {
-            sidebar.classList.remove('active');
-        });
+      sidebarClose.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+      });
     </script>
-</body>
+  </body>
 </html>

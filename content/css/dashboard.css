@@ -123,7 +123,7 @@ main {
 }
 
 #blog-list li a:hover {
-  color: #007bff;
+  color: #0070e8;
 }
 
 #blog-list li:active {
@@ -291,7 +291,7 @@ body.dark-theme .sidebar-close {
 }
 
 .sidebar-menu li a.github-icon:hover {
-  color: #007bff;
+  color: #0070e8;
 }
 
 .icon-link {
