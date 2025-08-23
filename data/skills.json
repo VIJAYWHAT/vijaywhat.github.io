@@ -1,57 +1,65 @@
 [
   {
-    "grouping":"Cyber Security Researching",
-    "skills":[ "IP Networking","DNS","Firewalls","Load Balancing","Microservices","RESTful APIs","SaaS/PaaS/IaaS"]
-},
-  {
-      "grouping":"DataBase Management",
-      "skills":[
-        {"name":"Microsoft SQL Server","icon":"msql_server"},
-        {"name":"My SQL","icon":"database"},
-        {"name": "PostgreSQL"},
-        {"name": "firebase"}
-      ]
+    "grouping": "Cyber Security Researching",
+    "skills": [
+      "IP Networking",
+      "DNS",
+      "Firewalls",
+      "Load Balancing",
+      "Microservices",
+      "RESTful APIs",
+      "SaaS/PaaS/IaaS"
+    ]
   },
   {
-    "grouping":"Languages, Operating Systems & Tools",
-    "skills":[  
-        {"name":"C"},
-        {"name":"C++"},
-        {"name":".Net and c#"},
-        {"name":"Java"},
-        {"name":"Python"},
-        {"name":"php"},
-        {"name":"Flutter"},
-        {"name":"git"},
-        {"name":"linux"},
-        {"name":"bash"},
-        {"name":"Joget"},
-        {"name":"Markdown"},
-        {"name":"Katex"}
-      ]
-},
-{
-  "grouping":"UI/UX",
-  "skills":[
-    {"name":"HTML 5"},
-    {"name":"CSS 3"},
-    {"name":"Bootstrap"},
-    {"name":"Dart"},
-    {"name":"Figma"},
-    {"name":"Illustrator"}
-  ]
-},
-{
-  "grouping":"Methodology",
-  "skills":[
-    {"name":"Agile"},
-    {"name":"Waterfall"},
-    {"name":"Kanban"}
-  ]
-},
-{
-  "grouping":"GitOps",
-  "skills":["Git"]
-}
-
+    "grouping": "DataBase Management",
+    "skills": [
+      { "name": "Microsoft SQL Server", "icon": "msql_server" },
+      { "name": "My SQL", "icon": "database" },
+      { "name": "PostgreSQL" },
+      { "name": "firebase" }
+    ]
+  },
+  {
+    "grouping": "Languages, Operating Systems & Tools",
+    "skills": [
+      { "name": "C" },
+      { "name": "C++" },
+      { "name": ".Net and c#" },
+      { "name": "Java" },
+      { "name": "Python" },
+      { "name": "php" },
+      { "name": "Flutter" },
+      { "name": "JavaScript" },
+      { "name": "git" },
+      { "name": "linux" },
+      { "name": "bash" },
+      { "name": "Joget" },
+      { "name": "Markdown" },
+      { "name": "Katex" }
+    ]
+  },
+  {
+    "grouping": "UI/UX",
+    "skills": [
+      { "name": "HTML 5" },
+      { "name": "CSS 3" },
+      { "name": "Bootstrap" },
+      { "name": "Dart" },
+      { "name": "Figma" },
+      { "name": "Illustrator" }
+    ]
+  },
+  {
+    "grouping": "Methodology",
+    "skills": [
+      { "name": "Agile" },
+      { "name": "Waterfall" },
+      { "name": "Kanban" }
+    ]
+  },
+  {
+    "grouping": "GitOps",
+    "skills": ["Git"]
+  }
 ]
