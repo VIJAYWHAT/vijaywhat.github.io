@@ -1,3 +1,4 @@
-[submodule "themes/my-resume"]
-	path = themes/my-resume
+[submodule "themes/resume-theme"]
+	path = themes/resume-theme
 	url = https://github.com/VIJAYWHAT/resume-theme.git
+	
