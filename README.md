@@ -1,4 +1,4 @@
-# vijayraja.github.io
+# vijayraja.github.io - [VijayRaja.me](https://vijayraja.me)
 
 ## Setup
 
@@ -6,4 +6,6 @@
 git submodule add -f https://github.com/techatpark/my-resume.git themes/my-resume
 hugo server
 ```
+
+
 
