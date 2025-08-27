@@ -4,8 +4,9 @@
 
 ```sh
 git submodule add -f https://github.com/techatpark/my-resume.git themes/my-resume
+```
+Run
+```sh
 hugo server
 ```
-
-
 
