@@ -1,6 +1,6 @@
 title = "Vijay Raja"
 baseURL = "https://vijaywhat.github.io/"
-theme = "resume-theme"
+theme = "my-resume"
 languageCode = "en-us"
 PygmentsCodeFences = true
 PygmentsCodeFencesGuessSyntax = true

@@ -5,4 +5,4 @@ themes/
 *.backup
 
 .hugo_build.lock
-themes/resume-theme
+themes/my-resume

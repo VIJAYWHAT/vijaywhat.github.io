@@ -10,7 +10,7 @@
 
 backend:
   name: github
-  repo: techatpark/resume-theme
+  repo: techatpark/my-resume
   branch: cms
 
 media_folder: "exampleSite/static/img" # Folder where user uploaded files should go
@@ -251,7 +251,7 @@ collections: # A list of collections the CMS should be able to edit
               label: "Theme",
               name: "theme",
               widget: "hidden",
-              default: "resume-theme",
+              default: "my-resume",
             }
           - {
               label: "Language Code",

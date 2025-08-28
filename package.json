@@ -4,7 +4,7 @@
     "dotenv": "^16.4.5"
   },
   "name": "firebase",
-  "description": "```sh\r git submodule add https://github.com/techatpark/resume-theme.git themes/resume-theme\r hugo server\r ```",
+  "description": "```sh\r git submodule add https://github.com/techatpark/my-resume.git themes/my-resume\r hugo server\r ```",
   "version": "10.12.5",
   "main": "index.js",
   "devDependencies": {},
