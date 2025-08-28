@@ -53,7 +53,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-
+          git submodule add -f https://github.com/VIJAYWHAT/resume-theme.git themes/resume-theme
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
