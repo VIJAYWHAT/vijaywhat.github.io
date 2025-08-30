@@ -3,7 +3,7 @@
 ## Setup
 
 ```sh
-git submodule add -f https://github.com/VIJAYWHAT/my-resume.git themes/my-resume
+git submodule add -f https://github.com/techatpark/my-resume.git themes/my-resume
 ```
 
 Run
